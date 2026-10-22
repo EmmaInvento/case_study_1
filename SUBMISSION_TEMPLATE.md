@@ -1,44 +1,42 @@
-# Aurora Grid — methodology proposal
+# Our proposal for Aurora Grid
 
 **Team:**
 **Members:**
-**Date:**
 
-Use this report outline or adapt it. Aim for 4–6 pages. Replace the prompts with your team's reasoning; no code or running system is required.
+Use these questions to guide your report. You can adapt the headings and add a diagram where it helps. Aim for 4–6 pages; no code is required.
 
-## 1. Client objective and scope
+## 1. What problem are we solving?
 
-What problem are you addressing? What would your methodology assess? State the assumptions and boundaries that matter to the client.
+Explain the client's need in your own words. What would your method assess? What assumptions are you making?
 
-## 2. Proposed methodology and design choices
+## 2. How would our approach work?
 
-Explain how your approach would work from the available materials to a useful client result. Describe the role of each supplied source and the decisions your team made about using it.
+Walk the reader through your proposed method. Explain how you would use the supplied materials, where AI would help and what people would need to decide.
 
-Where would AI help? Where is human judgment needed? Explain why your choices fit this case and discuss a meaningful alternative or trade-off. Add a diagram if useful.
+Why did you choose this approach? Discuss an alternative you considered and the trade-off that mattered to your team.
 
-## 3. Small worked illustration
+## 3. What does it look like on an example?
 
-Choose a manageable example from the supplied case and use it to demonstrate your methodology. Make your reasoning and source references clear enough for another reader to check.
+Choose a small example from the case and show your reasoning. Give precise source references so another team can check it.
 
-Explain what the example supports and what remains uncertain. Clearly separate observations you actually made from processing or checks you propose for a future implementation. A complete assessment of the case is not required.
+What can you conclude from the example? What is still unclear? Make it clear which work you actually carried out and which steps you are proposing.
 
-## 4. Reliability, limitations and evaluation
+## 4. How would we know it works?
 
-How would you find out whether your method works reliably? Describe useful checks or evaluation cases, likely failure modes, and how you would deal with incomplete or conflicting information. Explain the limits of any conclusions you draw.
+Describe how you would check the method's reliability. What could go wrong? How would you notice? What would you do when information is missing or contradictory?
 
-## 5. Client handoff and next steps
+## 5. What would we tell the client?
 
-Describe what you would deliver to the client and why that form is useful. Summarise the main design decisions, outstanding questions and further information or work needed.
+Explain what the client would receive and how it would help them. Summarise the limits of your proposal and the questions you would ask before taking it further.
 
-## References and assistance used
+## Sources and tools used
 
-List the source locations used in your worked illustration. Briefly state whether and how AI tools or other assistance contributed to the report, and what your team checked.
+List the references used in your example. If you used AI tools, briefly explain their contribution and how you checked it.
 
-## Before submitting
+## Final team check
 
-- Does the report explain a methodology that someone else can understand and discuss?
-- Are important design choices justified rather than merely named?
-- Is the worked illustration grounded in identifiable source material?
-- Are proposed capabilities distinguished from completed checks?
-- Are uncertainties, limitations and client questions explicit?
-- Are the team members identified and the file named `team-<name>-nis2-methodology.pdf` or `.md`?
+- Can someone outside our team follow the method?
+- Have we explained why we made our main choices?
+- Can a reader check our example against the sources?
+- Are we clear about what we know and what remains uncertain?
+- Can we explain how we would test our approach?

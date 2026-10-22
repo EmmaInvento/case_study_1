@@ -1,66 +1,82 @@
-# Aurora Grid — NIS2 methodology design case
+<p align="center">
+  <img src="assets/academy-logo.png" alt="FusionAI Academy" width="125">&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/aurora-grid-logo.png" alt="Aurora Grid" width="150">
+</p>
 
-**FusionAI Academy · 23 October 2026 · Morning workshop**
+# Aurora Grid — Design an AI-assisted compliance assessment
 
-Aurora Grid is a fictional electricity-grid operator. For this exercise, assume it is an Italian NIS2 essential entity. The company information describes the situation as of **9 October 2026**.
+**FusionAI Academy · NIS2 workshop**
 
-## Your consulting assignment
+## You are the consulting team
 
-Propose an effective AI-assisted methodology for assessing Aurora Grid against the supplied ACN requirements. Explain how your approach would work, why it is suitable, and how the client could judge the reliability of its conclusions.
+Aurora Grid operates an electricity network. The company wants to understand whether its cybersecurity practices meet the requirements it must follow, and how AI could help with that assessment.
 
-Your deliverable is a **methodology report**. No code, working application, installation or paid service is required. The technical approach, organisation of information, relationships between sources and design of any proposed outputs are your decisions. Explain and justify them in your report.
+Your team has been asked to **design a methodology and explain why it would work**. You have a questionnaire, company records, cybersecurity requirements and technical guidance. How would you use these materials to reach conclusions that the client can understand and trust?
 
-The method should address the supplied case as a whole. During the workshop, use a small example from the materials to make your reasoning concrete. You do not need to complete an assessment of all 116 requirement points or produce a full set of questionnaire mappings.
+Aurora is a fictional company. For the exercise, treat it as an Italian NIS2 essential entity.
 
-## Materials
+## What you will practise
 
-| Material | What it contains |
+- Turn a client's question into a clear assessment problem.
+- Make and justify design choices using real source material.
+- Decide where AI can help and where human judgment matters.
+- Explain how you would check the quality of the results.
+- Recognise uncertainty and communicate the limits of your approach.
+
+## Your materials
+
+| Material | Start here to understand… |
 | --- | --- |
-| [Security questionnaire](inputs/security-questionnaire.md) · [JSON version](inputs/security-questionnaire.json) | Ten questions and their possible answers. This blank form contains no Aurora selections. |
-| [Aurora Grid dossier](inputs/aurora-grid-dossier.md) · [JSON version](inputs/aurora-grid-dossier.json) | Aurora's selected answers and twenty dated company records. |
-| [ACN requirements workbook](inputs/acn-essential-entity-requirements.xlsx) | An editorial English exercise translation of 116 numbered ACN requirement points. Open the `Security Measures` sheet. |
-| [ENISA technical guidance](inputs/enisa-technical-guidance.pdf) | Technical guidance available to support your analysis. It is non-binding guidance, not company evidence. |
+| [Security questionnaire](inputs/security-questionnaire.md) | The ten questions asked about the company's cybersecurity practices and the possible answers. |
+| [Aurora Grid dossier](inputs/aurora-grid-dossier.md) | Aurora's answers and the company records available for your analysis. |
+| [ACN requirements](inputs/acn-essential-entity-requirements.xlsx) | The requirements to assess, organised into measures and numbered points. Open the `Security Measures` sheet. |
+| [ENISA technical guidance](inputs/enisa-technical-guidance.pdf) | Technical explanations and guidance. This is non-binding guidance, not evidence of what Aurora does. |
 
-The Markdown and JSON versions contain the same case information in different formats. Use whichever is convenient. A document reader and a spreadsheet viewer are enough to take part; no software dependencies need to be installed.
+All materials are supplied in English. Readable versions of the questionnaire and dossier are linked above; JSON copies are also available in `inputs/`. You only need a document reader and a spreadsheet viewer to take part.
 
-Review the supplied materials and explain the role you assign to each in your proposal. The [input manifest](input-manifest.json) identifies the exact files by checksum. The workbook and PDF are the reference editions for this exercise.
+## The challenge
 
-Source attribution: [ACN — Modalità e specifiche di base](https://www.acn.gov.it/portale/nis/modalita-specifiche-base) and [ENISA — NIS2 Technical Implementation Guidance, June 2025](https://www.enisa.europa.eu/sites/default/files/2025-06/ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf). The exercise translation does not replace the official ACN text.
+Study the case and propose an approach that could support an assessment of Aurora. Choose how to organise the work, use the materials and present the results. Explain the reasoning behind your choices.
 
-## What to hand in
+Use **one small example of your choice** to make your proposal concrete. Show enough of your reasoning for another team to understand and question it. You are designing a method for the wider case; you do not need to assess every requirement during the workshop.
 
-Submit **one report per team**, with the team members' names. PDF is recommended; Markdown is also accepted. Aim for **4–6 pages**, excluding a short references section or optional appendix. This is a suggested length, not a reason to omit an important design decision.
+**No coding is required.** Spend your time understanding the problem, discussing alternatives and developing a proposal you can defend.
 
-Your report must explain:
+## Your deliverable
 
-1. **Objective and scope:** the client need, what your method would assess, and its assumptions.
-2. **Proposed methodology:** the steps, responsibilities and design choices, including where AI would help and where human judgment is needed.
-3. **A small worked illustration:** apply your proposed reasoning to a case example of your choice, using precise references to the supplied materials. Distinguish what you actually examined from what your proposed system would do.
-4. **Reliability and limitations:** how you would evaluate the approach, what could fail, and how you would handle missing, conflicting or inconclusive information.
-5. **Client handoff:** what the client would receive, what remains unresolved and which questions or further information you would request.
+Submit **one report per team**, using the [report template](SUBMISSION_TEMPLATE.md) as a guide. Aim for **4–6 pages**, in PDF or Markdown, covering:
 
-The [report template](SUBMISSION_TEMPLATE.md) gives prompts for these sections. You may adapt its structure. A diagram is welcome if it makes your approach easier to understand. The template organises your explanation; it does not prescribe a system architecture or an output schema.
+1. **The problem:** what you want to assess and the assumptions you make.
+2. **Your approach:** how it would work and why you chose it. A diagram can help.
+3. **An example:** a short walkthrough grounded in the supplied materials.
+4. **Your checks:** how you would test the method and recognise unreliable conclusions.
+5. **Your advice to the client:** what your approach would deliver, its limits and the questions still open.
 
-Name the file `team-<name>-nis2-methodology.pdf` (or `.md`). Submit through the channel specified by the instructor during the session. Be ready to explain and defend your design in the debrief.
+Include the team members' names. Name the file `team-<name>-nis2-methodology.pdf` or `.md` and use the submission channel announced by the instructor.
 
-## How your proposal will be discussed
+## What makes a strong proposal?
 
-We will look for a clear, feasible method; justified use of the available materials; reasoning that can be checked; meaningful reliability checks; and an honest account of limitations. We assess the quality of your design and explanation, not the amount of code or the choice of a particular technology.
+A strong proposal is clear enough to follow, explains its choices and can be challenged against the sources. It acknowledges what it cannot establish. We will discuss the quality of your reasoning, the feasibility of your approach and the usefulness of your checks.
 
-Any illustrative finding should identify the exact ACN measure and numbered point. These judgment meanings are shared vocabulary for the exercise:
+For your example, make references easy to find: an ACN measure and point, a dossier record ID, a questionnaire question or an ENISA section and page. Explain what the source supports rather than simply listing it. Missing information is a reason to ask questions, not automatically proof that a requirement is unmet.
 
-| Judgment | Meaning |
+If you give an assessment judgment, use the vocabulary introduced in the briefing:
+
+| Judgment | What you are saying |
 | --- | --- |
-| Satisfied | The available company information supports every material element of the point within its stated scope. |
-| Partially satisfied | Some material elements are supported, while a material limit is shown. Explain both. |
-| Not satisfied | Company information affirmatively shows that a material requirement is unmet. |
-| Not determinable | Missing, narrow or unresolved information prevents a conclusion. |
+| Satisfied | The information supports the requirement in full within the scope assessed. |
+| Partially satisfied | Some parts are supported, but there is a material gap. |
+| Not satisfied | The information shows that a material part of the requirement is unmet. |
+| Not determinable | The available information does not support a decision. |
 
-A missing record alone does not prove noncompliance. Keep the scope and date of any company record in view. Cite source locations clearly enough for a reader to check your example: ACN code and point, questionnaire question, dossier record ID and date, or ENISA section and PDF page as applicable.
+## During the workshop
 
-## Working arrangements
+You have **three hours**. The instructor acts as your client contact: ask about anything unclear and keep track of unanswered questions. You may use AI tools; be ready to explain what you used them for and how you checked their contribution.
 
-- You have three hours for the exercise; breaks are outside that clock.
-- Ask the presenter, acting as the client contact, about unclear case information. Record unresolved assumptions and questions.
-- You may use AI tools, but you remain responsible for the reasoning and references. Briefly disclose any assistance used.
-- The afternoon session is an instructor-led debrief of a worked system. Your morning proposal is the basis for comparison and discussion.
+In the afternoon, we will compare your proposals with a worked system and discuss the design choices together.
+
+**Good luck, team!**
+
+---
+
+Original references: [ACN](https://www.acn.gov.it/portale/nis/modalita-specifiche-base) · [ENISA](https://www.enisa.europa.eu/sites/default/files/2025-06/ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf)
