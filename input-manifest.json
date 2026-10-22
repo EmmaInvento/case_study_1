@@ -1,0 +1,37 @@
+{
+  "package": "aurora-grid-case",
+  "case_as_of_date": "2026-10-09",
+  "note": "Fictional classroom case. Checksums identify these delivered files, not legal currency or company compliance.",
+  "files": [
+    {
+      "path": "inputs/security-questionnaire.md",
+      "role": "blank adapted ten-question form",
+      "sha256": "fec0069755217e86e5485daf88f5cf4f3a2f7ab5cfc2c8798f04e30d5b151501"
+    },
+    {
+      "path": "inputs/security-questionnaire.json",
+      "role": "machine-readable blank form",
+      "sha256": "3169acc99150962407e1573c318179cdb04acbf920667ed96c3935f7f970e8e3"
+    },
+    {
+      "path": "inputs/aurora-grid-dossier.md",
+      "role": "readable fictional client answers and records",
+      "sha256": "8dab03e991a0f77b47f4b838c9d128338dfa1a248b54985214ee0c124a00fcb6"
+    },
+    {
+      "path": "inputs/aurora-grid-dossier.json",
+      "role": "machine-readable fictional client answers and records",
+      "sha256": "f7dd7007817bd8c631b1507e6ed3b0719c76d5c3ea07cc7aa4bb6737e1c77db8"
+    },
+    {
+      "path": "inputs/acn-essential-entity-requirements.xlsx",
+      "role": "editorial English exercise translation of ACN essential-entity points",
+      "sha256": "662f6e7f332774281a74bc2676a7c9237611a57390366a24560cfb17c0f2325e"
+    },
+    {
+      "path": "inputs/enisa-technical-guidance.pdf",
+      "role": "ENISA technical implementation guidance; June 2025, version 1.0",
+      "sha256": "f03186edb047ece269ab9deeb3f0ec6172582ccc577617f0eb79e9bf96a7021b"
+    }
+  ]
+}
