@@ -3,7 +3,7 @@
   <img src="assets/aurora-grid-logo.png" alt="Aurora Grid" width="150">
 </p>
 
-# Aurora Grid — Design an AI-assisted compliance assessment
+# NIS2 Case Study — Design an AI-assisted compliance assessment
 
 **FusionAI Academy · NIS2 workshop**
 
