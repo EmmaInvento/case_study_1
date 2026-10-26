@@ -1,0 +1,25 @@
+{
+  "requirement_id": "ID.RA-05_P1",
+  "status": "Partially satisfied",
+  "reason": "ID.RA-05_P1 requires a documented assessment of network-and-information-system risk, including third-party dependencies, comprising risk identification, analysis and evaluation. Aurora Grid has an operating, documented risk-management plan defining those stages (AR-10), consistent with the risk-assessment framework described in GV.RM-03_P1 and V5-ENISA-0005-01. Its assessment identifies, analyses and evaluates recorded risks for both relevant systems (AR-12). The answer to the question about security-impacting suppliers—such suppliers are present, but their inventory or risk assessment is absent, incomplete or outdated—is supported in its assessment-related alternative: the current inventory covers all three such suppliers (AR-06, AR-11), but the assessment is incomplete (AR-12). Specifically, the dependency on a maintenance supplier's remote service, needed to recover the operations management system, lacks risk identification through a scenario identifier, likelihood and impact analysis, and risk evaluation (AR-12). The separate supply assessment also omits severe-disruption impact, recovery times and costs, and supplier roles and responsibilities (AR-06, AR-12). Thus, the required assessment stages are documented and performed for recorded risks, but a concrete third-party dependency and related risk factors remain outside the assessment, so the requirement is only partially satisfied.",
+  "source_ids": {
+    "acn_target": "ID.RA-05_P1",
+    "acn_context": [
+      "GV.RM-03_P1"
+    ],
+    "question_answers": [
+      "cloud_and_external_service_usage_level",
+      "critical_supplier_count_range"
+    ],
+    "company_records": [
+      "AR-06",
+      "AR-10",
+      "AR-11",
+      "AR-12"
+    ],
+    "enisa_passages": [
+      "V5-ENISA-0005-01"
+    ]
+  },
+  "missing_information": []
+}

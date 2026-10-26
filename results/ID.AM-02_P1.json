@@ -1,0 +1,22 @@
+{
+  "requirement_id": "ID.AM-02_P1",
+  "status": "Satisfied",
+  "reason": "ID.AM-02_P1 requires an up-to-date, internally approved inventory covering the services, systems and commercial, open-source, custom and API-accessible applications that make up the network and information systems. Consistent with ENISA's guidance that asset inventories be complete, accurate, current and consistent (V5-ENISA-0056-01), AS-26 is maintained as the complete current inventory, covers both relevant systems and their enabling services, expressly includes commercial software, open-source tooling, the custom operations application and the API-accessible maintenance application, and records internal approval for every entry; its currency was confirmed on 2026-10-09 (AR-13). The supplier-provided IT services answer—“They are used and all are listed in an up-to-date inventory identifying the service and supplier”—is corroborated by the inventory covering every such service (AR-06). The remote-access answer—“Remote access is permitted, but the list is missing, incomplete or not up to date”—is corroborated by the absence of maintained target-to-access-method pairings (AR-18), but that specific pairing is not required by ID.AM-02_P1 and does not negate the complete inventory evidenced in AR-13. Accordingly, every material element of the target requirement is supported.",
+  "source_ids": {
+    "acn_target": "ID.AM-02_P1",
+    "acn_context": [],
+    "question_answers": [
+      "cloud_and_external_service_usage_level",
+      "remote_access_status"
+    ],
+    "company_records": [
+      "AR-06",
+      "AR-13",
+      "AR-18"
+    ],
+    "enisa_passages": [
+      "V5-ENISA-0056-01"
+    ]
+  },
+  "missing_information": []
+}

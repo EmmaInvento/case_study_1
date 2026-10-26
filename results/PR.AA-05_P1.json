@@ -1,0 +1,26 @@
+{
+  "requirement_id": "PR.AA-05_P1",
+  "status": "Not determinable",
+  "reason": "PR.AA-05_P1 requires permissions to be assigned according to least privilege, separation of duties and need to know; V5-ENISA-0046-01 confirms these principles apply to assigning and revoking access rights. The remote-access question's selected answer C says at least one method lacks fully defined, documented or applied permitted activities or security measures. AR-07 substantiates that remote-access weakness for the legacy RDP service, but neither source establishes how permissions are assigned under the three principles, so it does not demonstrate a breach of this target. AR-20 provides partial positive evidence—a standard employee role template with limited permissions for one ordinary-user group—but states that effective entitlements, approvals, duty separation and the need-to-know basis for the legacy maintenance account and two active cloud administrator accounts were unavailable. AR-20 also expressly says that no specific breach of least privilege, separation of duties or need to know is established. Missing MFA for those accounts in AR-04 and AR-07 concerns authentication and does not prove improper permission assignment. Because the ordinary-user example does not cover the relevant privileged accounts and the missing evidence cannot be treated as failure, compliance across the applicable scope cannot be determined.",
+  "source_ids": {
+    "acn_target": "PR.AA-05_P1",
+    "acn_context": [],
+    "question_answers": [
+      "remote_access_alternative_modes"
+    ],
+    "company_records": [
+      "AR-04",
+      "AR-07",
+      "AR-20"
+    ],
+    "enisa_passages": [
+      "V5-ENISA-0046-01"
+    ]
+  },
+  "missing_information": [
+    "Current effective entitlements for the legacy maintenance account and the two active cloud administrator accounts.",
+    "Approval records and the documented least-privilege and need-to-know basis for those privileged entitlements.",
+    "Evidence showing how separation of duties is defined and enforced for the privileged accounts.",
+    "Evidence demonstrating that permission assignment follows all three principles across all user accounts in the applicable systems."
+  ]
+}

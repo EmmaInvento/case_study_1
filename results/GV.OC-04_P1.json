@@ -1,0 +1,23 @@
+{
+  "requirement_id": "GV.OC-04_P1",
+  "status": "Satisfied",
+  "reason": "GV.OC-04_P1 requires maintenance of an up-to-date list of relevant network and information systems; ENISA guidance further describes an inventory as complete, accurate, up to date and consistent (V5-ENISA-0056-01). The risk assessment identifies the complete relevant-system scope as the operations management system and the administrative cloud environment, including its console and managed application data (AR-01). The inventory records confirm that this list is kept up to date (AR-06), while AS-26 is expressly maintained as the complete current inventory of those systems, their enabling services and associated applications, with approved entries and currency confirmed on 2026-10-09 (AR-13). The selected answer that all supplier-provided IT services are listed in an up-to-date inventory is consistent with AR-06, although it supplies only partial evidence for this system-list requirement. The selected answer that the remote-access list is missing, incomplete or outdated is confirmed more specifically by AR-18: no maintained register pairs every remotely accessible target with its access method. That concrete gap does not negate satisfaction of GV.OC-04_P1 because the target requires an up-to-date list of relevant systems, which AR-01, AR-06 and AR-13 establish, rather than a system-to-remote-method list.",
+  "source_ids": {
+    "acn_target": "GV.OC-04_P1",
+    "acn_context": [],
+    "question_answers": [
+      "cloud_and_external_service_usage_level",
+      "remote_access_status"
+    ],
+    "company_records": [
+      "AR-01",
+      "AR-06",
+      "AR-13",
+      "AR-18"
+    ],
+    "enisa_passages": [
+      "V5-ENISA-0056-01"
+    ]
+  },
+  "missing_information": []
+}

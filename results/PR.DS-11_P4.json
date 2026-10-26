@@ -1,0 +1,23 @@
+{
+  "requirement_id": "PR.DS-11_P4",
+  "status": "Satisfied",
+  "reason": "The question “Does the company back up critical data?” was answered “Frequent automatic backups (daily or more often), with an offsite or cloud copy, tested periodically.” This is consistent with the documented situation: the approved risk assessment identifies both relevant systems and requires monthly restoration checks of their produced data backups (AR-01); daily cloud/offsite data backups and a monthly restoration schedule cover both systems (AR-02); and successful restore tests were performed monthly from July through October 2026 for both systems, confirming that restored data were intact, openable and usable, with validation by the operations manager (AR-03). These records demonstrate periodic usability verification through restore tests across the applicable risk-assessed scope, satisfying PR.DS-11_P4. The testing also accords with the interpretive guidance to conduct regular restores and validate the usability of restored data (V5-ENISA-0018-03). The absence of configuration backups or offline copies in AR-02 and AR-03 does not create a gap in this point, which requires testing the usability of backups actually made rather than requiring additional backup types.",
+  "source_ids": {
+    "acn_target": "PR.DS-11_P4",
+    "acn_context": [
+      "ID.RA-05_P1"
+    ],
+    "question_answers": [
+      "critical_data_backup_status"
+    ],
+    "company_records": [
+      "AR-01",
+      "AR-02",
+      "AR-03"
+    ],
+    "enisa_passages": [
+      "V5-ENISA-0018-03"
+    ]
+  },
+  "missing_information": []
+}

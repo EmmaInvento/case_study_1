@@ -1,0 +1,22 @@
+{
+  "requirement_id": "ID.IM-04_P2",
+  "status": "Not satisfied",
+  "reason": "The answer to “Does the company back up critical data?”—“Frequent automatic backups (daily or more often), with an offsite or cloud copy, tested periodically”—is supported for data backups: both relevant systems have daily cloud/offsite data backups and successful monthly restoration tests (AR-02, AR-03). This addresses part of the required-resources element, for which backups and redundancies are relevant under ID.IM-04_P2 and V5-ENISA-0017-01, but it does not establish a disaster recovery plan. BC-26 supplies some continuity components, including scope, roles, contacts, activation conditions, resources and redundancy, but expressly lacks recovery priorities and operation-specific recovery procedures and objectives (AR-14). More decisively, the controlled plan register confirms that no disaster recovery plan has been defined, approved or implemented for either relevant system and that no other document supplies the missing recovery order, procedures and objectives (AR-15). Because ID.IM-04_P2 centrally requires a defined, implemented, updated and documented disaster recovery plan containing all listed elements, the explicit absence of such a plan across the applicable scope makes the requirement not satisfied (ID.IM-04_P2).",
+  "source_ids": {
+    "acn_target": "ID.IM-04_P2",
+    "acn_context": [],
+    "question_answers": [
+      "critical_data_backup_status"
+    ],
+    "company_records": [
+      "AR-02",
+      "AR-03",
+      "AR-14",
+      "AR-15"
+    ],
+    "enisa_passages": [
+      "V5-ENISA-0017-01"
+    ]
+  },
+  "missing_information": []
+}

@@ -1,0 +1,477 @@
+{
+  "doc_name": "ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+  "page_count": 170,
+  "structure": [
+    {
+      "title": "Preface",
+      "node_id": "0000",
+      "start_index": 1,
+      "end_index": 7,
+      "summary": "ENISA preface for a June 2025 technical implementation guidance on Commission Implementing Regulation (EU) 2024/2690 under NIS2. Describes ENISA’s mandate, authorship, acknowledgements, legal/copyright notices, contact info, and the document’s purpose: advisory mappings, evidence examples, and standards/framework references for regulated entities and national supervision."
+    },
+    {
+      "title": "INTRODUCTION",
+      "node_id": "0001",
+      "start_index": 8,
+      "end_index": 14,
+      "summary": "ENISA’s June 2025 implementation guidance for Commission Implementing Regulation 2024/2690 under NIS2 is non-binding advice for relevant entities on cybersecurity risk-management requirements. It explains structure, evidence, mapping to ISO/IEC 27001/27002, NIST CSF 2.0, ETSI EN 319 401, CEN/TS 18026, and national frameworks. Chapter 1 defines the mandatory top-level policy on network and information systems, approved by management, communicated, acknowledged, and covering objectives, resources, roles, retention, metrics, and topic-specific policies."
+    },
+    {
+      "title": "POLICY ON THE SECURITY OF NETWORK AND INFORMATION SYSTEMS",
+      "node_id": "0002",
+      "start_index": 14,
+      "end_index": 14,
+      "summary": "Policy on security of network and information systems under Article 21(2)(a) of Directive (EU) 2022/2555 must define security approach, objectives, continual improvement, resources, communication/acknowledgement, roles and responsibilities, documentation retention, topic-specific policies, monitoring indicators and maturity metrics, and management approval date. It should cover all in-scope systems, assets and procedures and be communicated appropriately to relevant personnel and external parties.",
+      "nodes": [
+        {
+          "title": "POLICY ON THE SECURITY OF NETWORK AND INFORMATION SYSTEMS",
+          "node_id": "0003",
+          "start_index": 14,
+          "end_index": 17,
+          "summary": "Defines the network and information systems security policy under Article 21(2)(a) of Directive (EU) 2022/2555: scope, objectives, resources, communication/acknowledgement, roles, documentation retention, topic-specific policies, monitoring, and management approval. Requires annual and incident/change-based review, documented updates, and approved exceptions. Also assigns security roles, responsibilities, authorities, and competent personnel, aligned with ECSF."
+        },
+        {
+          "title": "ROLES, RESPONSIBILITIES AND AUTHORITIES",
+          "node_id": "0004",
+          "start_index": 17,
+          "end_index": 22,
+          "summary": "Defines security governance requirements: assign network and information system security roles, responsibilities and authorities, communicate obligations to personnel and third parties, ensure direct reporting to management, match dedicated or shared roles to entity size, segregate conflicting duties, and review/update roles after incidents or changes. Also establishes a risk management framework with documented assessments, treatment plans, and management approval of residual risks."
+        }
+      ]
+    },
+    {
+      "title": "RISK MANAGEMENT POLICY",
+      "node_id": "0005",
+      "start_index": 22,
+      "end_index": 22,
+      "summary": "Relevant entities must establish and maintain a risk management framework under Article 21(2)(a) of Directive (EU) 2022/2555 to identify, assess, treat, monitor, and document cybersecurity risks. Management must approve risk assessment results, residual risks, and the risk treatment plan, which should cover risk description, assets, measures, timelines, roles, effectiveness checks, and third-party residual risks.",
+      "nodes": [
+        {
+          "title": "RISK MANAGEMENT FRAMEWORK",
+          "node_id": "0006",
+          "start_index": 22,
+          "end_index": 27,
+          "summary": "Relevant entities must establish, document, and maintain a cybersecurity risk management framework and process, using a methodology, risk appetite/tolerance/criteria, all-hazards identification, risk analysis, treatment planning, and annual or event-driven review. Management bodies approve risk assessment results and residual risks. Compliance reviews must be regularly reported to management, at least annually."
+        },
+        {
+          "title": "COMPLIANCE MONITORING",
+          "node_id": "0007",
+          "start_index": 27,
+          "end_index": 29,
+          "summary": "Entities must regularly monitor compliance with network/information security policies, rules and standards, report status, key metrics, exceptions, risks and actions to management at least annually, and maintain documented procedures, review plans and exception logs. Compliance reviews occur at least annually and after significant incidents/changes. Independent reviews require competent, impartial reviewers and documented audit results."
+        },
+        {
+          "title": "INDEPENDENT REVIEW OF INFORMATION AND NETWORK SECURITY",
+          "node_id": "0008",
+          "start_index": 29,
+          "end_index": 33,
+          "summary": "Section 2.3 requires independent review of information and network security by competent, impartial reviewers, with documented process, scope, methods, frequency, and report templates; results, residual risks, and corrective actions must be reported to management bodies at least annually and after significant incidents/changes, and reflected in risk assessments/plans. Chapter 3 starts incident handling policy requirements aligned with BC/DR."
+        }
+      ]
+    },
+    {
+      "title": "INCIDENT HANDLING",
+      "node_id": "0009",
+      "start_index": 33,
+      "end_index": 33,
+      "summary": "Relevant entities must establish an incident handling policy under Article 21(2)(b) of Directive (EU) 2022/2555, defining roles, responsibilities and procedures for detection, analysis, containment, response, recovery, documentation and timely reporting, aligned with laws/standards, business continuity and disaster recovery, and including categorisation, escalation/reporting communications, assigned staff, and incident response documents.",
+      "nodes": [
+        {
+          "title": "INCIDENT HANDLING POLICY",
+          "node_id": "0010",
+          "start_index": 33,
+          "end_index": 36,
+          "summary": "Entities must implement an incident handling policy for detecting, analysing, containing, responding to, recovering from, documenting and reporting incidents, aligned with business continuity/disaster recovery, with incident categorisation, escalation/reporting communications, assigned roles, and response documents. Test and review annually and after major changes. Also establish monitoring and logging procedures/tools for incident detection, mitigation and forensic support."
+        },
+        {
+          "title": "MONITORING AND LOGGING",
+          "node_id": "0011",
+          "start_index": 36,
+          "end_index": 42,
+          "summary": "Procedures and tools must monitor and log network and information systems to detect incidents, support response, compliance, forensics and performance, using automated continuous/periodic monitoring, SIEM/EDR/XDR, tuned thresholds, retained and protected logs, synchronized time sources (NTP/PTP), redundant logging systems, regular reviews, and a simple multi-channel suspicious-event reporting mechanism."
+        },
+        {
+          "title": "EVENT REPORTING",
+          "node_id": "0012",
+          "start_index": 42,
+          "end_index": 44,
+          "summary": "Relevant entities must provide an easy suspicious-event reporting mechanism for employees, suppliers and customers, define reportable events and required content, offer multiple channels, communicate and train users, optionally allow anonymous reporting, and keep records. They must assess events with predefined criteria, logs, triage, playbooks and correlation to classify incidents, severity and recurring incidents."
+        },
+        {
+          "title": "EVENT ASSESSMENT AND CLASSIFICATION",
+          "node_id": "0013",
+          "start_index": 44,
+          "end_index": 46,
+          "summary": "Relevant entities must assess suspicious events using predefined criteria to classify them as incidents, determine nature, severity, recurring status, and prioritize containment/eradication via triage. They must review/correlate logs, use playbooks/runbooks, update classification with new information, and respond through documented incident response procedures covering containment, eradication, and recovery, with roles and standards."
+        },
+        {
+          "title": "INCIDENT RESPONSE",
+          "node_id": "0014",
+          "start_index": 46,
+          "end_index": 49,
+          "summary": "Entities must maintain documented incident response procedures and test them at least annually, covering containment, eradication, recovery, communication with CSIRTs/authorities/stakeholders, logging/evidence, roles, escalation, and trade-offs between forensic preservation, threat mitigation, and operational continuity. Post-incident reviews should identify root cause, lessons learned, and feed improvements into risk treatment and response processes."
+        },
+        {
+          "title": "POST-INCIDENT REVIEWS",
+          "node_id": "0015",
+          "start_index": 49,
+          "end_index": 51,
+          "summary": "Relevant entities shall conduct post-incident reviews after recovery, using root cause analysis to identify causes, contributing factors and lessons learned. Reviews must produce documented findings, recommendations and owners, share relevant findings with stakeholders, and feed improvements into network/information security, risk assessment/treatment, and incident handling. Incidents should be reviewed annually or after significant events."
+        }
+      ]
+    },
+    {
+      "title": "BUSINESS CONTINUITY AND CRISIS MANAGEMENT",
+      "node_id": "0016",
+      "start_index": 52,
+      "end_index": 52,
+      "summary": "Requires relevant entities under Directive (EU) 2022/2555 Article 21(2)(c) to maintain business continuity and disaster recovery plans for incidents, based on risk assessment and industry standards (e.g. ISO 22301, ISO 22313, NIST SP 800-34). Plans should cover disasters, roles, contacts, activation/deactivation, recovery order, objectives, resources, and temporary recovery, with activation/execution logs.",
+      "nodes": [
+        {
+          "title": "BUSINESS CONTINUITY AND DISASTER RECOVERY PLAN",
+          "node_id": "0017",
+          "start_index": 52,
+          "end_index": 57,
+          "summary": "Relevant entities must maintain and test business continuity and disaster recovery plans, based on risk assessment and BIA, with roles, contacts, activation criteria, recovery order, backups, redundancies, and recovery objectives (RTO, RPO, SDO, MAO/MTPD). Plans should follow standards, be reviewed at least annually, incorporate lessons learned, and cover backup copies, retention, access controls, and third-party coordination."
+        },
+        {
+          "title": "BACKUP AND REDUNDANCY MANAGEMENT",
+          "node_id": "0018",
+          "start_index": 57,
+          "end_index": 61,
+          "summary": "Defines backup and redundancy controls for entities: maintain complete, protected backups and sufficient redundant resources for systems, facilities, staff and communications; set backup plans with recovery times, safe off-/online storage, access controls, restoration and retention; perform integrity checks and regular recovery tests; protect backup tools/keys, use 3-2-1/immutable backups, and establish crisis management processes aligned with standards like ISO 22361:2022, ENISA and NIST SP 800-61r2."
+        },
+        {
+          "title": "CRISIS MANAGEMENT",
+          "node_id": "0019",
+          "start_index": 61,
+          "end_index": 67,
+          "summary": "Section covers crisis management and supply chain security. It requires documented crisis processes aligned with ISO 22361, ENISA and NIST SP 800-61, with declared-crisis criteria, roles, communications, CSIRT/authority information handling, annual testing, and updates after incidents. It also requires backup resilience guidance (3-2-1, immutable/offline, encryption, cloud replication) and a supply chain security policy with supplier selection criteria."
+        }
+      ]
+    },
+    {
+      "title": "SUPPLY CHAIN SECURITY",
+      "node_id": "0020",
+      "start_index": 67,
+      "end_index": 67,
+      "summary": "Requires entities under Directive (EU) 2022/2555 Art. 21(2)(d) to establish a supply chain security policy for direct suppliers/service providers, identify and communicate their role, and use industry standards/good practices. Criteria for selecting/contracting suppliers must include cybersecurity practices and secure development. Supplier roles may include ICT, manufacturer, MSP/MSSP, cloud; FOSS exceptions apply.",
+      "nodes": [
+        {
+          "title": "SUPPLY CHAIN SECURITY POLICY",
+          "node_id": "0021",
+          "start_index": 67,
+          "end_index": 74,
+          "summary": "Requires entities to maintain a supply chain security policy covering direct suppliers/service providers, risk-based selection, contractual cybersecurity clauses, and ongoing monitoring/review. Criteria include supplier cyber practices, secure development, ability to meet specs, resilience, diversification/vendor lock-in, and risk assessment results. Also requires supplier directory maintenance and special guidance for FOSS dependencies."
+        },
+        {
+          "title": "DIRECTORY OF SUPPLIERS AND SERVICE PROVIDERS",
+          "node_id": "0022",
+          "start_index": 74,
+          "end_index": 76,
+          "summary": "Maintain an up-to-date registry of direct suppliers and service providers with contact points and provided ICT products, services and processes. Review it at least annually or after significant changes. Consider contract start/end dates, region and risk-based classifications (critical/strategic/routine), and keep evidence such as registry updates, contracts, SLAs and review plans."
+        }
+      ]
+    },
+    {
+      "title": "SECURITY IN NETWORK AND INFORMATION SYSTEMS ACQUISITION, DEVELOPMENT AND MAINTENANCE",
+      "node_id": "0023",
+      "start_index": 77,
+      "end_index": 76,
+      "summary": "Defines security requirements for acquiring, developing, and maintaining network and information systems, including secure design, coding, testing, vulnerability and patch management, change control, cryptography, and supplier/security assurance. Emphasizes integrating security throughout the system lifecycle to reduce risk and ensure confidentiality, integrity, and availability.",
+      "nodes": [
+        {
+          "title": "SECURITY IN ACQUISITION OF ICT SERVICES OR ICT PRODUCTS",
+          "node_id": "0024",
+          "start_index": 77,
+          "end_index": 80,
+          "summary": "Requires relevant entities to manage risks in acquiring ICT services/products for critical components by embedding cybersecurity in procurement, specifying security requirements, lifecycle support/updates, component and function disclosure, compliance assurance, and validation. Processes should align with standards, be reviewed at least annually or after major incidents, and integrate secure development lifecycle rules, secure coding, and development-environment security."
+        },
+        {
+          "title": "SECURE DEVELOPMENT LIFE CYCLE",
+          "node_id": "0025",
+          "start_index": 80,
+          "end_index": 83,
+          "summary": "Defines SSDLC requirements for in-house and outsourced development: security requirements analysis, secure-by-design/zero-trust coding, secure dev environments, testing and sanitised test data, with updates at least every 2 years. Align with secure acquisition and security testing policies, involve FOSS considerations, and keep evidence. Also requires documented configuration management for hardware, software, services and networks."
+        },
+        {
+          "title": "CONFIGURATION MANAGEMENT",
+          "node_id": "0026",
+          "start_index": 83,
+          "end_index": 86,
+          "summary": "Section covers secure configuration management and change control for hardware, software, services and networks. It requires documented baselines, centralized automated enforcement, monitoring, approved exceptions, review at least monthly and after major incidents/changes, and use of standards/best practices (e.g. ISO/IEC 20000, ITIL, IEEE 828). Change management must include risk assessment, testing, rollback, approvals and optionally CAB."
+        },
+        {
+          "title": "CHANGE MANAGEMENT, REPAIRS AND MAINTENANCE",
+          "node_id": "0027",
+          "start_index": 86,
+          "end_index": 90,
+          "summary": "Requires documented change management for network/information systems: request, risk assessment, categorization/prioritization, tests, approvals, rollback, and records for each change. Applies to software/hardware releases, modifications, emergency changes, repairs, and maintenance; use approved tools/personnel, MFA where applicable, emergency post-documentation, periodic review at least every 2 years, and update inventories/risk plans."
+        },
+        {
+          "title": "SECURITY TESTING",
+          "node_id": "0028",
+          "start_index": 90,
+          "end_index": 92,
+          "summary": "Requires entities to establish, implement, apply, and review at least every 2 years a security testing policy and procedures aligned to risk assessment, with documented methodologies, scope, frequency, results, criticality, and mitigations. Testing should be continuous and cover relevant components using standards such as ISO/IEC 27034, OWASP WSTG, OSSTMM."
+        },
+        {
+          "title": "SECURITY PATCH MANAGEMENT",
+          "node_id": "0029",
+          "start_index": 92,
+          "end_index": 95,
+          "summary": "Section 6.6 requires documented security patch management aligned with change/vulnerability/risk management: identify, test, verify trusted sources, deploy patches promptly based on risk, keep records and evidence, and document justified non-patching with compensating controls and residual risk acceptance. Guidance covers automation, rollback/backups, deployment strategies, and evidence. Section 6.7 begins network security controls and architecture documentation."
+        },
+        {
+          "title": "NETWORK SECURITY",
+          "node_id": "0030",
+          "start_index": 95,
+          "end_index": 99,
+          "summary": "Network security requires standards-based protections: document and secure architecture, restrict unauthorized or unnecessary access/communications, control remote/service-provider access, protect admin systems, enforce trusted channels, secure wireless, DNS, email, and routing, and plan transition to latest protocols/IPv6. Review and update regularly. Network segmentation must follow risk assessment, separating critical, admin, production, test, and third-party zones with DMZ/OOB isolation."
+        },
+        {
+          "title": "NETWORK SEGMENTATION",
+          "node_id": "0031",
+          "start_index": 99,
+          "end_index": 102,
+          "summary": "Network segmentation must follow risk assessment results, separate systems from third parties, and isolate critical, public, admin, production/test, and high-criticality zones using DMZs, subnets, ACLs, firewalls, managed interfaces, and monitored boundaries. Review and update at least annually and after incidents/changes. Evidence includes diagrams, rules, configs, tests, and logs."
+        },
+        {
+          "title": "PROTECTION AGAINST MALICIOUS AND UNAUTHORISED SOFTWARE",
+          "node_id": "0032",
+          "start_index": 102,
+          "end_index": 104,
+          "summary": "Relevant entities must protect network and information systems from malicious and unauthorised software using continuously active, regularly updated detection/response tools, scanning, quarantine, whitelisting, spam/web/email filters, central management, and monitoring/logging aligned with access control and asset-handling. They must also obtain, assess, scan, prioritize and promptly remediate vulnerabilities, and follow coordinated vulnerability disclosure procedures."
+        },
+        {
+          "title": "VULNERABILITY HANDLING AND DISCLOSURE",
+          "node_id": "0033",
+          "start_index": 104,
+          "end_index": 108,
+          "summary": "Entities must monitor technical vulnerabilities via CSIRTs, authorities, suppliers and scans; assess severity using frameworks like CVSS/EPSS/SANS; remediate critical/high issues without undue delay; align with patch/change/risk/incident management; document mitigation or justified non-remediation; review monitoring channels at least biannually and support coordinated vulnerability disclosure/CVD."
+        }
+      ]
+    },
+    {
+      "title": "POLICIES AND PROCEDURES TO ASSESS THE EFFECTIVENESS OF CYBERSECURITY RISK-MANAGEMENT MEASURES",
+      "node_id": "0034",
+      "start_index": 108,
+      "end_index": 112,
+      "summary": "Relevant entities must establish, implement and regularly review policy and procedures to assess effectiveness of cybersecurity risk-management measures under Article 21(2)(f) NIS2, using risk assessment, past incidents, standards (e.g. ISO/IEC 27004, ITIL), defined roles, methods, KPIs, monitoring schedules, tests/audits, and updates at least every 2 years or after incidents/changes."
+    },
+    {
+      "title": "BASIC CYBER HYGIENE PRACTICES AND SECURITY TRAINING",
+      "node_id": "0035",
+      "start_index": 112,
+      "end_index": 112,
+      "summary": "Relevant entities must ensure employees, management bodies, and where appropriate direct suppliers and service providers are aware of cybersecurity risks, importance, and cyber hygiene under Article 21(2)(g) of Directive (EU) 2022/2555. They should run recurring awareness programmes aligned to security policies, covering risk measures, contacts, and practices such as strong authentication, reporting, phishing defense, secure email/web use, mobile/connected-vehicle security, and safe connections.",
+      "nodes": [
+        {
+          "title": "AWARENESS RAISING AND BASIC CYBER HYGIENE PRACTICES",
+          "node_id": "0036",
+          "start_index": 112,
+          "end_index": 114,
+          "summary": "Relevant entities must run recurring cybersecurity awareness programmes for all employees, management, and where appropriate suppliers/service providers, aligned to NIS policy, covering cyber hygiene, phishing/social engineering, secure devices/teleworking, updates, backups, and reporting. Programmes should be tested, updated at least annually, and evidenced. Roles needing security skills must receive regular, role-specific training under a structured training programme, considering ECSF and recognized certifications."
+        },
+        {
+          "title": "SECURITY TRAINING",
+          "node_id": "0037",
+          "start_index": 114,
+          "end_index": 118,
+          "summary": "Defines periodic security training for relevant roles, tailored to job functions and role changes, covering secure configuration/operation, MFA/passwords, sensitive data handling, threat recognition, incident reporting, and crisis/BCP exercises; effectiveness must be assessed and reviewed annually. Also sets cryptography policy/procedures for confidentiality, authenticity, integrity, including algorithms, protocols, key management, and compliance with state-of-the-art standards and asset classification."
+        }
+      ]
+    },
+    {
+      "title": "CRYPTOGRAPHY",
+      "node_id": "0038",
+      "start_index": 118,
+      "end_index": 123,
+      "summary": "Relevant entities must maintain a cryptography policy and procedures aligned with asset classification, risk assessment, regulations and state-of-the-art standards, covering approved algorithms, protocols, key management, logging, key protection, cryptographic agility, and periodic review/update at least annually. Employees must be trained and responsibilities for staff, suppliers and service providers documented and acknowledged."
+    },
+    {
+      "title": "HUMAN RESOURCES SECURITY",
+      "node_id": "0039",
+      "start_index": 123,
+      "end_index": 123,
+      "summary": "Relevant entities must ensure employees, direct suppliers, and service providers understand and commit to security responsibilities under Article 21(2)(i) of Directive (EU) 2022/2555. Guidance covers defined roles, onboarding and refresher training, documented obligations in jobs/contracts/SLAs, periodic assessments, acknowledgements, accountability measures, centralized records, and evidence of training, audits, and performance review integration.",
+      "nodes": [
+        {
+          "title": "HUMAN RESOURCES SECURITY",
+          "node_id": "0040",
+          "start_index": 123,
+          "end_index": 125,
+          "summary": "Requires entities to define, document, train, and monitor security responsibilities for employees, management, and applicable direct suppliers/service providers, including cyber hygiene and privileged-access duties, with acknowledgements, audits, and annual role reviews. Emphasizes qualified hiring, validation of certifications, and feasible background verification for roles needing it, with evidence records retained."
+        },
+        {
+          "title": "VERIFICATION OF BACKGROUND",
+          "node_id": "0041",
+          "start_index": 125,
+          "end_index": 127,
+          "summary": "Section 10.2 requires risk-based background verification for employees and relevant suppliers/service providers before they exercise specified roles, with criteria for sensitive, financial, procurement, and physical-security roles, periodic rechecks, legal/GDPR compliance, documented evidence, and annual policy review. It also covers 10.3 termination/change-of-employment clauses, access revocation, asset return, and ongoing security duties."
+        },
+        {
+          "title": "TERMINATION OR CHANGE OF EMPLOYMENT PROCEDURES",
+          "node_id": "0042",
+          "start_index": 127,
+          "end_index": 128,
+          "summary": "10.3 requires contractual post-employment security duties, including confidentiality, asset return, timely revocation of access, and rebriefing after role changes, with regular review, exit interviews, and monitoring for unauthorized access. 10.4 requires a communicated disciplinary process for NIS policy violations, aligned with legal, contractual, HR and GDPR requirements, with records of actions taken."
+        },
+        {
+          "title": "DISCIPLINARY PROCESS",
+          "node_id": "0043",
+          "start_index": 128,
+          "end_index": 131,
+          "summary": "Section covers 10.4 disciplinary process for violations of network and information system security policies: establish, communicate, maintain, review, and update a legally compliant process with HR involvement, employee awareness, accountability, confidentiality where possible, and evidence of violations and sanctions. It also introduces 11.1 access control policy requiring documented logical and physical access controls, authentication, role-based rights, and procedures aligned to business, risk, and security requirements."
+        }
+      ]
+    },
+    {
+      "title": "ACCESS CONTROL",
+      "node_id": "0044",
+      "start_index": 131,
+      "end_index": 131,
+      "summary": "Entities must establish, document, and implement logical and physical access control policies for network and information systems under Article 21(2)(i) of Directive (EU) 2022/2555. Policies must cover staff, visitors, suppliers, service providers, and system processes, ensure authenticated access only, and define documented roles, procedures, responsibilities, and rights aligned with business, security, asset classification, and physical security requirements.",
+      "nodes": [
+        {
+          "title": "ACCESS CONTROL POLICY",
+          "node_id": "0045",
+          "start_index": 131,
+          "end_index": 133,
+          "summary": "Requires documented, implemented logical and physical access control policies for network and information systems, covering users, visitors, suppliers, processes, and authenticated access. Use need-to-know, need-to-use, least privilege, segregation of duties, role/attribute-based controls, and dynamic rules as needed. Manage, review, log, and update access rights and policies at least annually or after significant incidents/changes."
+        },
+        {
+          "title": "MANAGEMENT OF ACCESS RIGHTS",
+          "node_id": "0046",
+          "start_index": 133,
+          "end_index": 136,
+          "summary": "Defines access rights management: assign, modify, revoke, document and log access per policy using need-to-know, least privilege, separation of duties and authorized approval. Requires third-party limits, central access register, periodic reviews at least annually, and automated or centralized IAM/SSO where possible. Privileged/system admin accounts need stronger authentication, dedicated accounts, temporary access and tight restriction."
+        },
+        {
+          "title": "PRIVILEGED ACCOUNTS AND SYSTEM ADMINISTRATION ACCOUNTS",
+          "node_id": "0047",
+          "start_index": 136,
+          "end_index": 138,
+          "summary": "Entities must maintain access control policies for privileged and system administration accounts: allocate least-privilege, event-based access; identify and authorize privileged users and physical access; use strong authentication/MFA, dedicated admin accounts, restrict admin accounts to admin systems, log all privileged access, and review/revoke rights periodically with documented evidence."
+        },
+        {
+          "title": "ADMINISTRATION SYSTEMS",
+          "node_id": "0048",
+          "start_index": 138,
+          "end_index": 139,
+          "summary": "Entities must strictly control administration systems under access control policy 11.1: authorized use only, logical isolation from applications, strong authentication/MFA, encryption, centralized logging/SIEM with alerts, defined log retention, audits and accountability. Identity management 11.5 requires lifecycle control and inventories for user, privileged and service identities with ownership, privileges, dates and review."
+        },
+        {
+          "title": "IDENTIFICATION",
+          "node_id": "0049",
+          "start_index": 139,
+          "end_index": 142,
+          "summary": "Sets requirements for identity lifecycle management, unique and linked identities, logging, approval and oversight of shared identities, periodic review and deactivation, and secure authentication. Emphasizes inventories for user, privileged, and service identities; RBAC, IAM, PAM, SSO, MFA, passkeys, OTP, OIDC, inactive session termination, credential rotation, and separate privileged credentials."
+        },
+        {
+          "title": "AUTHENTICATION",
+          "node_id": "0050",
+          "start_index": 142,
+          "end_index": 145,
+          "summary": "Entities must implement secure authentication aligned to access-control policy, using risk- and asset-classification-based methods, unique credentials, strong secret handling, regular credential changes, lockout/reset after failed attempts, session timeouts, and separate admin credentials. Prefer phishing-resistant MFA/passkeys/FIDO2/WebAuthn; review and test procedures regularly, train users, and alert on breaches."
+        },
+        {
+          "title": "MULTI-FACTOR AUTHENTICATION",
+          "node_id": "0051",
+          "start_index": 145,
+          "end_index": 148,
+          "summary": "Requires appropriate MFA or continuous authentication for network and information system access based on asset classification and role, preferably phishing-resistant. Covers secure password practices, MFA methods (OTP, push, hardware tokens, passkeys, FIDO2, biometrics), remote/admin/sensitive access, internet-facing systems, adaptive risk-based rules, SSO integration, fallback, monitoring, user training, updates, and GDPR compliance."
+        }
+      ]
+    },
+    {
+      "title": "ASSET MANAGEMENT",
+      "node_id": "0052",
+      "start_index": 149,
+      "end_index": 149,
+      "summary": "Relevant entities must define and document asset classification levels for all network and information system assets, including information, and assign each asset a level based on confidentiality, integrity, authenticity, availability, sensitivity, criticality, risk and business value. Availability classifications must align with business continuity and disaster recovery objectives, access control, legal requirements, and any applicable national/international information-sharing schemes.",
+      "nodes": [
+        {
+          "title": "ASSET CLASSIFICATION",
+          "node_id": "0053",
+          "start_index": 149,
+          "end_index": 150,
+          "summary": "Requires documented asset classification levels for all in-scope network and information system assets, based on confidentiality, integrity, authenticity, availability, sensitivity, criticality, risk and business value, aligned with access control and BC/DR objectives. Review classifications at least annually and upon change. Establish and communicate an asset handling policy, including third parties and BYOD/mobile devices."
+        },
+        {
+          "title": "HANDLING OF ASSETS",
+          "node_id": "0054",
+          "start_index": 150,
+          "end_index": 152,
+          "summary": "Requires asset classification review at least annually and update when regulations, value, sensitivity, or criticality change; owners are responsible and staff must know protection levels. Establish and communicate asset handling policy covering full lifecycle, secure use/storage/transport, irretrievable deletion/destruction, secure transfer, and annual review. Apply removable media policy with technical restrictions, malware scanning, transit/storage controls, and cryptographic protection where appropriate."
+        },
+        {
+          "title": "REMOVABLE MEDIA POLICY",
+          "node_id": "0055",
+          "start_index": 152,
+          "end_index": 153,
+          "summary": "Section 12.3 requires a removable media policy for employees and third parties covering scope, authorization, disabling autorun/self-execution, malware scanning, storage/transit protection, encryption of sensitive data, and incident response for lost/compromised media; entities must communicate, train, monitor, and periodically review/update it. Section 12.4 requires a complete, accurate, traceable asset inventory."
+        },
+        {
+          "title": "ASSET INVENTORY",
+          "node_id": "0056",
+          "start_index": 153,
+          "end_index": 155,
+          "summary": "12.4 Asset Inventory requires a complete, accurate, up-to-date, consistent, traceable inventory of all assets supporting operations/services, with regular reviews, history of changes, standardised categorisation, validation, and appropriate granularity including asset IDs, owners, locations, classifications, dependencies and logging needs; tools may automate discovery and alerts. Also covers deposit/return/deletion of employee-held assets on termination or network access removal."
+        },
+        {
+          "title": "DEPOSIT, RETURN OR DELETION OF ASSETS UPON TERMINATION OF EMPLOYMENT",
+          "node_id": "0057",
+          "start_index": 155,
+          "end_index": 157,
+          "summary": "Entities must define and document procedures for deposit, return or irrevocable deletion of assets held by personnel upon employment termination, aligned with asset inventory 12.4.1. If return/deletion is impossible, access to network and information systems must be blocked per 12.2.2. Covers endpoints, portable media, equipment, credentials, keys, and physical copies; requires records, exit checklists, and revocation/isolation controls."
+        }
+      ]
+    },
+    {
+      "title": "ENVIRONMENTAL AND PHYSICAL SECURITY",
+      "node_id": "0058",
+      "start_index": 158,
+      "end_index": 158,
+      "summary": "Entities must protect network and information systems from failures or disruptions of supporting utilities under Article 21(2)(c) of Directive (EU) 2022/2555. Cover power, water, gas, HVAC, and telecommunications in risk assessments; use redundancy, protection, monitoring, emergency supply contracts, and continuous testing/maintenance, including thresholds and incident reporting.",
+      "nodes": [
+        {
+          "title": "SUPPORTING UTILITIES",
+          "node_id": "0059",
+          "start_index": 158,
+          "end_index": 160,
+          "summary": "Section 13 requires relevant entities under Directive (EU) 2022/2555 Article 21(2)(c),(e) to assess and protect supporting utilities and physical/environmental threats, including power, water, gas, HVAC, telecoms, and backup power. It mandates redundancy, monitoring, emergency supply, testing, reviews, BC/backup planning, and controls for utilities and facility/environmental risks, with evidence records and remote-work exceptions where applicable."
+        },
+        {
+          "title": "PROTECTION AGAINST PHYSICAL AND ENVIRONMENTAL THREATS",
+          "node_id": "0060",
+          "start_index": 160,
+          "end_index": 162,
+          "summary": "Entities must, based on risk assessment, protect network and information systems from physical/environmental threats by identifying threatened assets, implementing controls, setting minimum/maximum thresholds, monitoring conditions and reporting exceptions. Measures include access control, surveillance, climate/fire protection, enhanced response, regular testing and updates. Also prevent/monitor unauthorized physical access using perimeters, entry controls, secure premises and continuous monitoring."
+        },
+        {
+          "title": "PERIMETER AND PHYSICAL ACCESS CONTROL",
+          "node_id": "0061",
+          "start_index": 162,
+          "end_index": 166,
+          "summary": "Relevant entities must prevent, monitor, test and update physical access controls to protect network and information systems from unauthorized access, damage and interference. Using risk assessment, define security perimeters, entry controls, secure offices/facilities, surveillance, visitor and access-rights management, and integrate with logical access/HR security; remote models rely on strong logical controls, home-workspace guidance and contractual cloud/co-location controls."
+        }
+      ]
+    },
+    {
+      "title": "ANNEX I NATIONAL FRAMEWORKS",
+      "node_id": "0062",
+      "start_index": 166,
+      "end_index": 168,
+      "summary": "Annex I outlines national NIS2 framework implementations: Belgium’s CyFun®, Finland’s Traficom recommendations and NCSC-FI Cybermeter/Kybermittari maturity model, Germany’s state-of-the-art advisory and BSI standards, Greece’s Law 5160/2024 plus cybersecurity handbook and self-assessment tool, and Spain’s mandatory Royal Decree 311/2022 ENS. Annex II defines core NIS2 terms and measures."
+    },
+    {
+      "title": "ANNEX II GLOSSARY",
+      "node_id": "0063",
+      "start_index": 168,
+      "end_index": 170,
+      "summary": "Glossary for ENISA Technical Implementation Guidance (June 2025 v1.0) defining core NIS2/Implementing Regulation terms: asset, crisis, critical, cyber hygiene practices, direct suppliers/service providers, entity, event, facilities, incident handling, incident, information, management bodies, measure, personnel, policy, privileged access, procedure, process, rule, significant incident, suspicious event, topic-specific policy, and user."
+    }
+  ],
+  "source_index_sha256": "18c800441172f2c65eaf7e3a0c85dc1513387832002d3ddc3fce7adeb7199b4e"
+}

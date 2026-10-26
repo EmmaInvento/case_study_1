@@ -1,0 +1,283 @@
+{
+  "title": "Self-assessment questionnaire on company security measures",
+  "instructions": "Select only one answer per question, referring to the company’s current situation",
+  "profile": "essenziale",
+  "sections": [
+    {
+      "id": "security_organization",
+      "title": "Security organization",
+      "question_ids": [
+        "ciso_appointment_status"
+      ]
+    },
+    {
+      "id": "external_services_suppliers",
+      "title": "External services and suppliers",
+      "question_ids": [
+        "cloud_and_external_service_usage_level",
+        "critical_supplier_count_range"
+      ]
+    },
+    {
+      "id": "access_and_authentication",
+      "title": "Access and authentication",
+      "question_ids": [
+        "remote_access_status",
+        "remote_access_alternative_modes",
+        "mfa_implementation_status"
+      ]
+    },
+    {
+      "id": "data_protection",
+      "title": "Data protection",
+      "question_ids": [
+        "removable_media_policy_status",
+        "critical_data_backup_status"
+      ]
+    },
+    {
+      "id": "incident_management_and_improvement",
+      "title": "Incident management and improvement",
+      "question_ids": [
+        "security_contact_email",
+        "recent_security_incident_status"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ciso_appointment_status",
+      "text": "Which situation describes the roles and responsibilities for cybersecurity, including coordination of the function?",
+      "input": "actions",
+      "options": [
+        {
+          "value": "A",
+          "label": "The security organization is approved and communicated internally, with defined roles and responsibilities and an up-to-date list of the people assigned, with or without the CISO title."
+        },
+        {
+          "value": "B",
+          "label": "Some people perform security tasks, but the organization, responsibilities, approval, communication or list of assigned people are absent or incomplete."
+        },
+        {
+          "value": "C",
+          "label": "No person performs or coordinates cybersecurity tasks"
+        },
+        {
+          "value": "D",
+          "label": "Information not available."
+        }
+      ]
+    },
+    {
+      "id": "cloud_and_external_service_usage_level",
+      "text": "Which situation describes the supplier-provided IT services used by the company, including cloud services and external platforms?",
+      "input": "dropdown",
+      "options": [
+        {
+          "value": "A",
+          "label": "They are used and all are listed in an up-to-date inventory identifying the service and supplier."
+        },
+        {
+          "value": "B",
+          "label": "They are used, but the inventory is missing, incomplete or not up to date."
+        },
+        {
+          "value": "C",
+          "label": "An up-to-date survey identifies no supplier-provided IT services, including cloud services."
+        },
+        {
+          "value": "D",
+          "label": "Information not available."
+        }
+      ]
+    },
+    {
+      "id": "critical_supplier_count_range",
+      "text": "For suppliers that may affect the security of systems and networks (through access, data or continuity), which situation describes the inventory and risk assessment?",
+      "input": "actions",
+      "options": [
+        {
+          "value": "A",
+          "label": "Such suppliers are present: they are listed in an up-to-date inventory with a contact person and type of supply, and the risk associated with their supplies is assessed and documented."
+        },
+        {
+          "value": "B",
+          "label": "Such suppliers are present, but the inventory is absent, incomplete or not up to date, or the risk assessment of their supplies is absent or incomplete."
+        },
+        {
+          "value": "C",
+          "label": "An up-to-date survey has identified no suppliers with a possible impact on the security of systems and networks."
+        },
+        {
+          "value": "D",
+          "label": "Information not available."
+        }
+      ]
+    },
+    {
+      "id": "remote_access_status",
+      "text": "For remote access to company systems and networks, which situation describes the list of accessible systems and their respective access methods?",
+      "input": "actions",
+      "options": [
+        {
+          "value": "A",
+          "label": "Remote access is permitted and an up-to-date list includes all accessible systems and, for each one, the access method."
+        },
+        {
+          "value": "B",
+          "label": "Remote access is permitted, but the list is missing, incomplete or not up to date."
+        },
+        {
+          "value": "C",
+          "label": "An up-to-date survey confirms that no company system or network is remotely accessible."
+        },
+        {
+          "value": "D",
+          "label": "Information not available."
+        }
+      ]
+    },
+    {
+      "id": "remote_access_alternative_modes",
+      "text": "If remote access to company information systems exists (for example servers, applications, cloud services and network devices), which situation describes the methods used, the permitted activities and the security measures applied?",
+      "input": "actions",
+      "options": [
+        {
+          "value": "A",
+          "label": "Only the VPN is used; for each accessible system, permitted activities are defined and documented and security measures for access are applied."
+        },
+        {
+          "value": "B",
+          "label": "Methods other than the VPN are used, including alongside the VPN; for each accessible system, permitted activities are defined and documented and security measures for access are applied."
+        },
+        {
+          "value": "C",
+          "label": "At least one remote access method is used, but permitted activities or security measures are not defined, documented or applied for all accessible systems."
+        },
+        {
+          "value": "D",
+          "label": "Information not available."
+        }
+      ],
+      "visible_if": {
+        "question_id": "remote_access_status",
+        "values": [
+          "A",
+          "B"
+        ]
+      }
+    },
+    {
+      "id": "mfa_implementation_status",
+      "text": "Has the company implemented multi-factor authentication (MFA) systems?",
+      "input": "dropdown",
+      "options": [
+        {
+          "value": "1",
+          "label": "MFA implemented on all critical systems (email, VPN, cloud, business management system)"
+        },
+        {
+          "value": "2",
+          "label": "MFA implemented only on some systems"
+        },
+        {
+          "value": "3",
+          "label": "MFA not implemented but being planned"
+        },
+        {
+          "value": "4",
+          "label": "MFA not implemented and not planned"
+        }
+      ]
+    },
+    {
+      "id": "removable_media_policy_status",
+      "text": "Does the company allow the use of removable devices?",
+      "input": "dropdown",
+      "options": [
+        {
+          "value": "1",
+          "label": "The company allows unrestricted use of removable devices."
+        },
+        {
+          "value": "2",
+          "label": "The company allows only company-owned or authorized removable devices."
+        },
+        {
+          "value": "3",
+          "label": "The company does not allow the use of removable devices."
+        }
+      ],
+      "note": "Note: for example, USB flash drives, external hard drives, or other removable media."
+    },
+    {
+      "id": "critical_data_backup_status",
+      "text": "Does the company back up critical data?",
+      "input": "dropdown",
+      "options": [
+        {
+          "value": "1",
+          "label": "Frequent automatic backups (daily or more often), with an offsite or cloud copy, tested periodically"
+        },
+        {
+          "value": "2",
+          "label": "Automatic backups without an offsite copy, tested periodically"
+        },
+        {
+          "value": "3",
+          "label": "Manual or irregular backups"
+        },
+        {
+          "value": "4",
+          "label": "No structured backup system"
+        }
+      ]
+    },
+    {
+      "id": "security_contact_email",
+      "text": "Which situation describes the contact details for reporting incidents and the roles responsible for communications with CSIRT Italia?",
+      "input": "actions",
+      "options": [
+        {
+          "value": "A",
+          "label": "Actively staffed contact channels are available; a point of contact and a deputy, a CSIRT liaison and any deputies are identified within the organization; the incident plan includes contact details and communication methods."
+        },
+        {
+          "value": "B",
+          "label": "Contact details or designated people are identified, but at least one of the following is missing: the definition of the responsible roles, contact information in the plan or communication methods."
+        },
+        {
+          "value": "C",
+          "label": "Neither contact details nor people responsible for incident communications are identified."
+        },
+        {
+          "value": "D",
+          "label": "Information not available."
+        }
+      ]
+    },
+    {
+      "id": "recent_security_incident_status",
+      "text": "Over the last two years, which situation describes significant incidents and the review of the risk assessment and incident management plan?",
+      "input": "actions",
+      "options": [
+        {
+          "value": "A",
+          "label": "No significant incident; the risk assessment and incident management plan have been reviewed within the planned timeframes."
+        },
+        {
+          "value": "B",
+          "label": "At least one significant incident; both have been reviewed within the planned timeframes and after each event, incorporating lessons learned into the plan where relevant."
+        },
+        {
+          "value": "C",
+          "label": "At least one of the planned reviews, periodic or following a significant incident, has not been completed, including the incorporation of lessons learned when required."
+        },
+        {
+          "value": "D",
+          "label": "Information not available."
+        }
+      ]
+    }
+  ]
+}

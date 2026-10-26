@@ -1,0 +1,42 @@
+TEACHING TEMPLATE — ONE ACN-POINT ASSESSMENT
+
+TASK
+Assess Aurora Grid against the single target ACN requirement below. Give a verdict for that point only. Use other ACN references to understand its meaning and scope, not as separate points to judge.
+
+TARGET ACN REQUIREMENT
+{{TARGET_ACN_POINT_ID_AND_TEXT}}
+
+ADDITIONAL ACN NORMATIVE CONTEXT
+Internal references: {{RELEVANT_INTERNAL_ACN_IDS_AND_TEXT}}
+External point or whole-measure references: {{RELEVANT_EXTERNAL_ACN_IDS_AND_TEXT}}
+These references help interpret the target. They are not company evidence.
+
+RELEVANT QUESTIONS AND SELECTED ANSWERS
+{{LINKED_QUESTION_TEXT_AND_AURORA_SELECTED_ANSWERS}}
+Selected answers are company self-reports; check them against the dossier.
+
+COMPANY DOSSIER EVIDENCE
+{{DATED_COMPANY_RECORDS_WITH_AR_IDS_AND_TEXT}}
+Read the supplied records together, including conflicting details. Use their AR IDs when explaining the verdict. Do not infer chronology from source order or describe evidence as later unless the supplied dates or context establish that relationship.
+
+ENISA GUIDANCE
+{{VERIFIED_ENISA_PASSAGE_IDS_AND_TEXT}}
+Use pertinent passages to interpret implementation. They do not add ACN duties or prove company facts.
+
+VERDICT RULES
+Satisfied — company evidence supports every material part of the target in its applicable scope.
+Partially satisfied — evidence supports part of the target, while showing a concrete gap in another required part or part of its scope.
+Not satisfied — company evidence explicitly shows a central requirement is not met in the applicable scope.
+Not determinable — decisive facts are missing or conflict; name the specific information needed.
+Do not infer failure from missing information. Use only the supplied source texts and IDs.
+
+OUTPUT
+Return one JSON object in this structure. Cite only source IDs offered in this request; leave unused citation lists empty.
+
+Write reason in clear, concise English. If a selected questionnaire answer materially conflicts with the dossier, open reason by identifying the question in plain English, its selected answer, and the conflicting AR record(s). State what each source says and whether the self-report is more or less favourable than the documented situation. Explain whether the supplied evidence resolves the conflict, considering specificity, scope and any established dates; do not automatically prefer the dossier. If the conflict remains unresolved, say so and apply the verdict rules above.
+
+Place a specific reference next to every material company claim and assessment judgment: cite the questionnaire question by a readable name or its text together with the relevant selected answer, and/or the supporting AR record ID. Cite the target ACN ID and any pertinent ENISA passage ID next to the criterion or guidance they support. Explain the evidence-to-criterion-to-verdict link briefly; ENISA guidance cannot support a claim that the company implemented a control. A source_ids list alone does not replace these references in reason.
+
+Do not use technical question IDs, snake_case identifiers or JSON field names in reason. Keep the correct technical IDs in source_ids; inline AR record IDs, ACN IDs and ENISA passage IDs are appropriate.
+
+{{JSON_OUTPUT_FORMAT}}

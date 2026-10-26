@@ -24,7 +24,7 @@ __pycache__/
 scratch/
 work/
 outputs/
-results/
+results/new/
 learner-outputs/
 *.log
 
@@ -33,3 +33,13 @@ learner-outputs/
 Thumbs.db
 .idea/
 .vscode/
+
+# Application build artifacts and private provider configuration
+build/
+dist/
+*.egg-info/
+*.[eE][nN][vV]
+*.[eE][nN][vV].*
+.[eE][nN][vV]
+.[eE][nN][vV].*
+!.env.example

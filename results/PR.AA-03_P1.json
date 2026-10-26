@@ -1,0 +1,21 @@
+{
+  "requirement_id": "PR.AA-03_P1",
+  "status": "Partially satisfied",
+  "reason": "The answer to “Has the company implemented multi-factor authentication systems?”—“MFA implemented only on some systems”—is broadly consistent with, but less specific than, the dossier: MFA is active for ordinary operations-system accounts, VPN, email and the jump host, while it is absent from the legacy RDP maintenance account and two active cloud-console administrative accounts (AR-04, AR-07). Aurora Grid has assessed authentication methods using all three factors required by PR.AA-03_P1—account privileges, system criticality and permitted operations—and concluded that every account on both relevant systems requires MFA (AR-01, AR-07). This aligns with the guidance that authentication strength should reflect asset classification (V5-ENISA-0050-01). However, the identified privileged and remote-access accounts remain active without the MFA required by that assessment, without documented derogations; the legacy RDP path also lacks connection-origin restrictions (AR-04, AR-07). Thus, the required risk assessment exists and risk-commensurate authentication is implemented for part of the applicable scope, but concrete gaps prevent full satisfaction of PR.AA-03_P1 (AR-04, AR-07).",
+  "source_ids": {
+    "acn_target": "PR.AA-03_P1",
+    "acn_context": [],
+    "question_answers": [
+      "mfa_implementation_status"
+    ],
+    "company_records": [
+      "AR-01",
+      "AR-04",
+      "AR-07"
+    ],
+    "enisa_passages": [
+      "V5-ENISA-0050-01"
+    ]
+  },
+  "missing_information": []
+}

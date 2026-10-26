@@ -1,0 +1,22 @@
+{
+  "requirement_id": "ID.RA-05_P2",
+  "status": "Satisfied",
+  "reason": "ID.RA-05_P2 requires the risk assessment described in ID.RA-05_P1 to be performed at planned intervals of no more than two years and after significant incidents, organizational changes, or changes in threat exposure and associated risks. The selected answer to “Over the last two years, which situation describes significant incidents and the review of the risk assessment and incident management plan?” states that both documents were reviewed within planned timeframes and after each significant incident. AR-09 corroborates this: the risk assessment followed an annual review schedule, was reviewed on 2026-06-15, and was reviewed again on 2026-09-02 after the sole significant incident on 2026-08-18; it also states that no other significant incidents or organizational or threat-exposure changes requiring review occurred. Annual review is more frequent than the required two-year maximum, and the documented incident-triggered review satisfies the applicable event-driven requirement (ID.RA-05_P2; AR-09). AR-12 identifies a substantive omission in the assessment performed on 2026-09-02, but it does not contradict the evidence that the assessment was performed at the required interval and after the incident; assessment completeness belongs to the contextual requirements of ID.RA-05_P1 rather than the timing requirement judged here (ID.RA-05_P1; AR-12). AR-09 also records incorporation of relevant lessons learned, consistent with the post-incident improvement guidance in V5-ENISA-0015-01. Accordingly, every material timing and applicable trigger element of ID.RA-05_P2 is supported.",
+  "source_ids": {
+    "acn_target": "ID.RA-05_P2",
+    "acn_context": [
+      "ID.RA-05_P1"
+    ],
+    "question_answers": [
+      "recent_security_incident_status"
+    ],
+    "company_records": [
+      "AR-09",
+      "AR-12"
+    ],
+    "enisa_passages": [
+      "V5-ENISA-0015-01"
+    ]
+  },
+  "missing_information": []
+}

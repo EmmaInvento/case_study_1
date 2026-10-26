@@ -3,80 +3,103 @@
   <img src="assets/aurora-grid-logo.png" alt="Aurora Grid" width="150">
 </p>
 
-# NIS2 Case Study — Design an AI-assisted compliance assessment
+# NIS2 case study — Aurora Grid
 
-**FusionAI Academy · NIS2 workshop**
+**FusionAI Academy · Workshop and worked implementation**
 
-## You are the consulting team
+Start with the [workshop brief](docs/workshop.md) to design your team's assessment methodology and use the [submission template](SUBMISSION_TEMPLATE.md) for the report. The original workshop is a discussion and design exercise; no coding is required for that activity.
 
-Aurora Grid operates an electricity network. The company wants to understand whether its cybersecurity practices meet the requirements it must follow, and how AI could help with that assessment.
+This repository also includes the worked implementation presented after the workshop: a single-requirement assessment CLI, its processed inputs, and 27 saved results. The original [questionnaire](inputs/security-questionnaire.md) and [company dossier](inputs/aurora-grid-dossier.md) remain available for reading. The application uses the self-contained source snapshots in `src/nis2_academy/resources/`.
 
-Your team has been asked to **design a methodology and explain why it would work**. You have a questionnaire, company records, cybersecurity requirements and technical guidance. How would you use these materials to reach conclusions that the client can understand and trust?
+Assess one ACN requirement at a time against the fictional Aurora Grid company case. The application builds a traceable context, calls a configurable model API, and validates the returned JSON and its source references.
 
-Aurora is a fictional company. For the exercise, treat it as an Italian NIS2 essential entity.
+The catalogue contains 116 ACN points. **27 reviewed targets** are supported for assessment; other catalogue points may provide context. This teaching exercise is not a compliance certification or a check for later regulatory updates.
 
-## What you will practise
+## Setup
 
-- Turn a client's question into a clear assessment problem.
-- Make and justify design choices using real source material.
-- Decide where AI can help and where human judgment matters.
-- Explain how you would check the quality of the results.
-- Recognise uncertainty and communicate the limits of your approach.
+Use Python 3.12 and [uv](https://docs.astral.sh/uv/):
 
-## Your materials
+```sh
+uv sync --locked
+cp .env.example .env
+```
 
-| Material | Start here to understand… |
-| --- | --- |
-| [Security questionnaire](inputs/security-questionnaire.md) | The ten questions asked about the company's cybersecurity practices and the possible answers. |
-| [Aurora Grid dossier](inputs/aurora-grid-dossier.md) | Aurora's answers and the company records available for your analysis. |
-| [ACN requirements](inputs/acn-essential-entity-requirements.xlsx) | The requirements to assess, organised into measures and numbered points. Open the `Security Measures` sheet. |
-| [ENISA technical guidance](inputs/enisa-technical-guidance.pdf) | Technical explanations and guidance. This is non-binding guidance, not evidence of what Aurora does. |
+Edit your private `.env` with your provider's API base URL, key and model identifier:
 
-All materials are supplied in English. Readable versions of the questionnaire and dossier are linked above; JSON copies are also available in `inputs/`. You only need a document reader and a spreadsheet viewer to take part.
+```dotenv
+OPENAI_BASE_URL=https://api.example.invalid/v1
+OPENAI_API_KEY=replace-with-your-key
+OPENAI_MODEL=replace-with-your-model
+NIS2_RESPONSE_FORMAT=json_schema
+OPENAI_REASONING_EFFORT=
+```
 
-## The challenge
+The values above are placeholders. An API account with access to the selected model is required. Requests may incur provider charges. No graph database or container service is needed.
 
-Study the case and propose an approach that could support an assessment of Aurora. Choose how to organise the work, use the materials and present the results. Explain the reasoning behind your choices.
+Only `.env` in the current directory is loaded, unless you supply `--env-file PATH`. Configuration priority is command-line overrides, process environment, then file. Values are not interpolated and no parent directories are searched. Keep keys out of URLs and source control. Private env filenames are ignored by Git; `.env.example` is the shareable template.
 
-Use **one small example of your choice** to make your proposal concrete. Show enough of your reasoning for another team to understand and question it. You are designing a method for the wider case; you do not need to assess every requirement during the workshop.
+## Run and inspect
 
-**No coding is required.** Spend your time understanding the problem, discussing alternatives and developing a proposal you can defend.
+```sh
+# Offline: no credentials or network needed
+uv run main.py list
+uv run main.py context PR.AA-03_P2
+uv run main.py prompt PR.AA-03_P2
+uv run main.py schema PR.AA-03_P2
+uv run main.py verify
+uv run main.py validate-reply PR.AA-03_P2 results/PR.AA-03_P2.json
+uv run main.py matching-prompt mfa_implementation_status
 
-## Your deliverable
+# One live API request; choose a new output directory each time
+uv run main.py assess PR.AA-03_P2 --out results/new/example
 
-Submit **one report per team**, using the [report template](SUBMISSION_TEMPLATE.md) as a guide. Aim for **4–6 pages**, in PDF or Markdown, covering:
+# Optional overrides: use values supported by your provider and model
+uv run main.py assess PR.AA-03_P2 --model your-model --reasoning-effort medium
+```
 
-1. **The problem:** what you want to assess and the assumptions you make.
-2. **Your approach:** how it would work and why you chose it. A diagram can help.
-3. **An example:** a short walkthrough grounded in the supplied materials.
-4. **Your checks:** how you would test the method and recognise unreliable conclusions.
-5. **Your advice to the client:** what your approach would deliver, its limits and the questions still open.
+JSON output is UTF-8 and indented. Controlled errors go to stderr, leaving stdout empty. Exit codes: `0` success, `2` invalid input/configuration/sources/result, `3` model transport failure. Unknown IDs and catalogue IDs outside the 27-target scope produce distinct errors.
 
-Include the team members' names. Name the file `team-<name>-nis2-methodology.pdf` or `.md` and use the submission channel announced by the instructor.
+Each new run saves context, rendered prompt, exact model input, schema, API request body and a run manifest under `results/new/` by default. A result is saved only after local validation. Existing output directories are never overwritten. Authentication headers and raw provider error bodies are not saved.
 
-## What makes a strong proposal?
+## API contract and model settings
 
-A strong proposal is clear enough to follow, explains its choices and can be challenged against the sources. It acknowledges what it cannot establish. We will discuss the quality of your reasoning, the feasibility of your approach and the usefulness of your checks.
+The client sends one non-streaming `POST {OPENAI_BASE_URL}/chat/completions` request with Bearer authentication, `model`, `messages`, and `response_format`. Provide the base URL without `/chat/completions`. HTTPS is required except for loopback test servers.
 
-For your example, make references easy to find: an ACN measure and point, a dossier record ID, a questionnaire question or an ENISA section and page. Explain what the source supports rather than simply listing it. Missing information is a reason to ask questions, not automatically proof that a requirement is unmet.
+- `json_schema` sends the local schema with `strict: true`; the provider and model must support it.
+- `json_object` is an explicit alternative for providers supporting JSON mode. Select it in `.env` or with `--response-format json_object`. The same local validator still applies.
+- Optional `OPENAI_REASONING_EFFORT` / `--reasoning-effort` sends the top-level `reasoning_effort` field. Accepted configuration values are `none`, `minimal`, `low`, `medium`, `high`, `xhigh`; actual support depends on the provider and model. Empty omits the field. Unsupported settings fail visibly, with no retry, fallback or silent parameter removal.
 
-If you give an assessment judgment, use the vocabulary introduced in the briefing:
+The expected response has one `choices` entry, textual `message.content` containing JSON, and `finish_reason: "stop"`. Refusals, tool calls, incomplete output and invalid references are rejected. Redirects and environment-based proxy/TLS overrides are disabled.
 
-| Judgment | What you are saying |
-| --- | --- |
-| Satisfied | The information supports the requirement in full within the scope assessed. |
-| Partially satisfied | Some parts are supported, but there is a material gap. |
-| Not satisfied | The information shows that a material part of the requirement is unmet. |
-| Not determinable | The available information does not support a decision. |
+This implements the [Chat Completions contract](https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/create), not universal provider compatibility. Responses API, streaming, tool calling and custom authentication are not implemented. Native Azure deployment endpoints requiring `api-version` and an `api-key` header need an adapter; a v1 endpoint or gateway works only if it satisfies this exact contract. Provider compatibility has been tested with offline mock responses, not live requests.
 
-## During the workshop
+New run manifests record the requested model and reasoning setting, plus the model identifier reported by the response. A provider-reported identifier does not independently establish an exact server snapshot. A successful request records acceptance of the reasoning parameter, not proof of the server's effective thinking level; effective effort remains unknown.
 
-You have **three hours**. The instructor acts as your client contact: ask about anything unclear and keep track of unanswered questions. You may use AI tools; be ready to explain what you used them for and how you checked their contribution.
+## Included results
 
-In the afternoon, we will compare your proposals with a worked system and discuss the design choices together.
+`results/<requirement_id>.json` contains each of the **27 accepted assessments**, with its original judgment, rationale and source IDs preserved. These files are outputs for inspection, never inputs to the model or expected-answer fixtures. They are directly readable in this repository.
 
-**Good luck, team!**
+The current run contains **8 Satisfied, 9 Partially satisfied, 8 Not satisfied and 2 Not determinable** assessments. It used **gpt-5.6-sol / medium reasoning effort**, as recorded in [results/provenance.json](results/provenance.json). An external authenticated client generated these results; they are not a live validation of the repository API client. The recorded model and reasoning settings identify the client configuration, not an independently verified server snapshot or effective internal reasoning level.
 
----
+## Method and tests
 
-Original references: [ACN](https://www.acn.gov.it/portale/nis/modalita-specifiche-base) · [ENISA](https://www.enisa.europa.eu/sites/default/files/2025-06/ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf)
+Read [the methodology](docs/methodology.md) for dependency direction, evidence boundaries, ENISA retrieval and output validation.
+
+```sh
+uv sync --locked --extra dev --extra verify
+uv run pytest
+uv run ruff check .
+uv run main.py verify --pdf
+```
+
+Tests cover context construction, schema/reference validation, API configuration, request formatting, safe error handling and persistence using synthetic replies. They do not establish the semantic correctness of the saved judgments.
+
+```text
+main.py                  CLI entry point
+pyproject.toml, uv.lock   pinned installation
+.env.example             safe API configuration template
+src/nis2_academy/         application and packaged source inputs
+docs/methodology.md       teaching methodology
+tests/                   offline test source
+results/                 27 readable assessments and essential provenance
+```

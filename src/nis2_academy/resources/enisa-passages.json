@@ -1,0 +1,297 @@
+{
+  "schema_version": 1,
+  "document": "ENISA Technical Implementation Guidance, June 2025, version 1.0",
+  "source_role": "Implementation context only; ACN English workbook is the assessment criterion. ENISA passages are not company evidence or an independent ACN obligation.",
+  "source_pdf": "inputs/reference/enisa/ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+  "source_pdf_sha256": "f03186edb047ece269ab9deeb3f0ec6172582ccc577617f0eb79e9bf96a7021b",
+  "page_convention": "page is the 1-based physical PDF page; the printed page number equals page - 1 in this PDF. The frozen KG PageIndex ranges are not used as passage locations.",
+  "kg_dataset_id": "academy_questionnaire_en_v2_0_frozen_1",
+  "verification_method": "All excerpts are contiguous substrings of PyMuPDF extracted original PDF page text after whitespace normalization. Section headings and clause IDs were checked against the PDF; chapter-heading KG nodes 0005 and 0009 cite child clauses.",
+  "usage_cautions": [
+    "KG enisa:0005 and enisa:0009 are chapter headings; their passages cite substantive child clauses 2.1.1 and 3.1.1.",
+    "KG enisa:0019 provides crisis-management context, not a backup-specific criterion.",
+    "KG enisa:0056 describes a general asset inventory, not proof of a dedicated remote-access system and method inventory."
+  ],
+  "passages": [
+    {
+      "passage_id": "V5-ENISA-0003-01",
+      "kg_node_id": "0003",
+      "section_id": "1.1.1",
+      "section_title": "POLICY ON THE SECURITY OF NETWORK AND INFORMATION SYSTEMS",
+      "page": 14,
+      "excerpt": "(g) lay down roles and responsibilities pursuant to point 1.2;",
+      "source_file": "ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+      "verification_method": "PyMuPDF get_text; whitespace normalized; contiguous exact substring on stated PDF page"
+    },
+    {
+      "passage_id": "V5-ENISA-0004-01",
+      "kg_node_id": "0004",
+      "section_id": "1.2.1",
+      "section_title": "ROLES, RESPONSIBILITIES AND AUTHORITIES",
+      "page": 17,
+      "excerpt": "lay down responsibilities and authorities for network and information system security and assign them to roles, allocate them according to the relevant entities’ needs and communicate them to the management bodies.",
+      "source_file": "ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+      "verification_method": "PyMuPDF get_text; whitespace normalized; contiguous exact substring on stated PDF page"
+    },
+    {
+      "passage_id": "V5-ENISA-0005-01",
+      "kg_node_id": "0005",
+      "section_id": "2.1.1",
+      "section_title": "RISK MANAGEMENT FRAMEWORK",
+      "page": 22,
+      "excerpt": "The relevant entities shall perform and document risk assessments and, based on the results, establish, implement and monitor a risk treatment plan.",
+      "source_file": "ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+      "verification_method": "PyMuPDF get_text; whitespace normalized; contiguous exact substring on stated PDF page"
+    },
+    {
+      "passage_id": "V5-ENISA-0006-01",
+      "kg_node_id": "0006",
+      "section_id": "2.1.1",
+      "section_title": "RISK MANAGEMENT FRAMEWORK",
+      "page": 22,
+      "excerpt": "Risk assessment results and residual risks (12) shall be accepted by management bodies or, where applicable, by persons who are accountable and have the authority to manage risks, provided that the relevant entities ensure adequate reporting to the management bodies.",
+      "source_file": "ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+      "verification_method": "PyMuPDF get_text; whitespace normalized; contiguous exact substring on stated PDF page"
+    },
+    {
+      "passage_id": "V5-ENISA-0009-01",
+      "kg_node_id": "0009",
+      "section_id": "3.1.1",
+      "section_title": "INCIDENT HANDLING POLICY",
+      "page": 33,
+      "excerpt": "the relevant entities shall establish and implement an incident handling policy laying down the roles, responsibilities and procedures for detecting, analysing, containing or responding to, recovering from, documenting and reporting of incidents in a timely manner.",
+      "source_file": "ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+      "verification_method": "PyMuPDF get_text; whitespace normalized; contiguous exact substring on stated PDF page"
+    },
+    {
+      "passage_id": "V5-ENISA-0010-01",
+      "kg_node_id": "0010",
+      "section_id": "3.1.2",
+      "section_title": "INCIDENT HANDLING POLICY",
+      "page": 33,
+      "excerpt": "(b) effective communication plans including for escalation and reporting; (c) assignment of roles to detect and appropriately respond to incidents to competent employees; (d) documents to be used in the course of incident detection and response such as incident response manuals, escalation charts, contact lists and templates.",
+      "source_file": "ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+      "verification_method": "PyMuPDF get_text; whitespace normalized; contiguous exact substring on stated PDF page"
+    },
+    {
+      "passage_id": "V5-ENISA-0010-02",
+      "kg_node_id": "0010",
+      "section_id": "3.1.3",
+      "section_title": "INCIDENT HANDLING POLICY",
+      "page": 35,
+      "excerpt": "The roles, responsibilities and procedures laid down in the policy shall be tested and reviewed and, where appropriate, updated at planned intervals and after significant incidents or significant changes to operations or risks.",
+      "source_file": "ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+      "verification_method": "PyMuPDF get_text; whitespace normalized; contiguous exact substring on stated PDF page"
+    },
+    {
+      "passage_id": "V5-ENISA-0012-01",
+      "kg_node_id": "0012",
+      "section_id": "3.3.1",
+      "section_title": "EVENT REPORTING",
+      "page": 42,
+      "excerpt": "The relevant entities shall put in place a simple mechanism allowing their employees, suppliers and customers to report suspicious events.",
+      "source_file": "ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+      "verification_method": "PyMuPDF get_text; whitespace normalized; contiguous exact substring on stated PDF page"
+    },
+    {
+      "passage_id": "V5-ENISA-0014-01",
+      "kg_node_id": "0014",
+      "section_id": "3.5.1",
+      "section_title": "INCIDENT RESPONSE",
+      "page": 46,
+      "excerpt": "The relevant entities shall respond to incidents in accordance with documented procedures and in a timely manner.",
+      "source_file": "ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+      "verification_method": "PyMuPDF get_text; whitespace normalized; contiguous exact substring on stated PDF page"
+    },
+    {
+      "passage_id": "V5-ENISA-0015-01",
+      "kg_node_id": "0015",
+      "section_id": "3.6.2",
+      "section_title": "POST-INCIDENT REVIEWS",
+      "page": 49,
+      "excerpt": "The relevant entities shall ensure that post-incident reviews contribute to improving their approach to network and information security, to risk treatment measures and to incident handling, detection and response procedures.",
+      "source_file": "ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+      "verification_method": "PyMuPDF get_text; whitespace normalized; contiguous exact substring on stated PDF page"
+    },
+    {
+      "passage_id": "V5-ENISA-0017-01",
+      "kg_node_id": "0017",
+      "section_id": "4.1.2",
+      "section_title": "BUSINESS CONTINUITY AND DISASTER RECOVERY PLAN",
+      "page": 52,
+      "excerpt": "(g) required resources, including backups and redundancies;",
+      "source_file": "ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+      "verification_method": "PyMuPDF get_text; whitespace normalized; contiguous exact substring on stated PDF page"
+    },
+    {
+      "passage_id": "V5-ENISA-0018-01",
+      "kg_node_id": "0018",
+      "section_id": "4.2.2",
+      "section_title": "BACKUP AND REDUNDANCY MANAGEMENT",
+      "page": 57,
+      "excerpt": "(b) assurance that backup copies are complete and accurate, including configuration data and data stored in cloud computing service environment;",
+      "source_file": "ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+      "verification_method": "PyMuPDF get_text; whitespace normalized; contiguous exact substring on stated PDF page"
+    },
+    {
+      "passage_id": "V5-ENISA-0018-02",
+      "kg_node_id": "0018",
+      "section_id": "4.2.2",
+      "section_title": "BACKUP AND REDUNDANCY MANAGEMENT",
+      "page": 57,
+      "excerpt": "(c) storing backup copies (online or offline) in a safe location or locations, which are not in the same network as the system and are at sufficient distance to escape any damage from a disaster at the main site;",
+      "source_file": "ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+      "verification_method": "PyMuPDF get_text; whitespace normalized; contiguous exact substring on stated PDF page"
+    },
+    {
+      "passage_id": "V5-ENISA-0018-03",
+      "kg_node_id": "0018",
+      "section_id": "4.2.3",
+      "section_title": "BACKUP AND REDUNDANCY MANAGEMENT",
+      "page": 58,
+      "excerpt": "schedule regular tests to restore data from backups to ensure they are complete, functional and validated by business users to confirm the accuracy and usability of the restored data;",
+      "source_file": "ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+      "verification_method": "PyMuPDF get_text; whitespace normalized; contiguous exact substring on stated PDF page"
+    },
+    {
+      "passage_id": "V5-ENISA-0019-01",
+      "kg_node_id": "0019",
+      "section_id": "4.3.1",
+      "section_title": "CRISIS MANAGEMENT",
+      "page": 61,
+      "excerpt": "The relevant entities shall put in place a process for crisis management.",
+      "source_file": "ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+      "verification_method": "PyMuPDF get_text; whitespace normalized; contiguous exact substring on stated PDF page"
+    },
+    {
+      "passage_id": "V5-ENISA-0021-01",
+      "kg_node_id": "0021",
+      "section_id": "5.1.1",
+      "section_title": "SUPPLY CHAIN SECURITY POLICY",
+      "page": 67,
+      "excerpt": "establish, implement and apply a supply chain security policy which governs the relations with their direct suppliers and service providers to mitigate the identified risks to the security of network and information systems.",
+      "source_file": "ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+      "verification_method": "PyMuPDF get_text; whitespace normalized; contiguous exact substring on stated PDF page"
+    },
+    {
+      "passage_id": "V5-ENISA-0022-01",
+      "kg_node_id": "0022",
+      "section_id": "5.2",
+      "section_title": "DIRECTORY OF SUPPLIERS AND SERVICE PROVIDERS",
+      "page": 74,
+      "excerpt": "maintain and keep up to date a registry of their direct suppliers and service providers, including: (a) contact points for each direct supplier and service provider; (b) a list of ICT products, ICT services and ICT processes provided by the direct supplier or service provider to the relevant entities.",
+      "source_file": "ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+      "verification_method": "PyMuPDF get_text; whitespace normalized; contiguous exact substring on stated PDF page"
+    },
+    {
+      "passage_id": "V5-ENISA-0030-01",
+      "kg_node_id": "0030",
+      "section_id": "6.7.2(d)",
+      "section_title": "NETWORK SECURITY",
+      "page": 95,
+      "excerpt": "determine and apply controls for remote access to network and information systems, including access by service providers;",
+      "source_file": "ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+      "verification_method": "PyMuPDF get_text; whitespace normalized; contiguous exact substring on stated PDF page"
+    },
+    {
+      "passage_id": "V5-ENISA-0045-01",
+      "kg_node_id": "0045",
+      "section_id": "11.1.1",
+      "section_title": "ACCESS CONTROL POLICY",
+      "page": 131,
+      "excerpt": "establish, document and implement logical and physical access control policies for the access to their network and information systems, based on business requirements as well as network and information system security requirements.",
+      "source_file": "ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+      "verification_method": "PyMuPDF get_text; whitespace normalized; contiguous exact substring on stated PDF page"
+    },
+    {
+      "passage_id": "V5-ENISA-0046-01",
+      "kg_node_id": "0046",
+      "section_id": "11.2.2(a)",
+      "section_title": "MANAGEMENT OF ACCESS RIGHTS",
+      "page": 133,
+      "excerpt": "(a) assign and revoke access rights based on the principles of need-to-know, least privilege and separation of duties;",
+      "source_file": "ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+      "verification_method": "PyMuPDF get_text; whitespace normalized; contiguous exact substring on stated PDF page"
+    },
+    {
+      "passage_id": "V5-ENISA-0046-02",
+      "kg_node_id": "0046",
+      "section_id": "11.2.2(d)",
+      "section_title": "MANAGEMENT OF ACCESS RIGHTS",
+      "page": 133,
+      "excerpt": "(d) ensure that access rights appropriately address third-party access, such as visitors, suppliers and service providers, in particular by limiting access rights in scope and in duration;",
+      "source_file": "ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+      "verification_method": "PyMuPDF get_text; whitespace normalized; contiguous exact substring on stated PDF page"
+    },
+    {
+      "passage_id": "V5-ENISA-0050-01",
+      "kg_node_id": "0050",
+      "section_id": "11.6.2(a)",
+      "section_title": "AUTHENTICATION",
+      "page": 142,
+      "excerpt": "(a) ensure the strength of authentication is appropriate to the classification of the asset to be accessed;",
+      "source_file": "ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+      "verification_method": "PyMuPDF get_text; whitespace normalized; contiguous exact substring on stated PDF page"
+    },
+    {
+      "passage_id": "V5-ENISA-0051-01",
+      "kg_node_id": "0051",
+      "section_id": "11.7.1",
+      "section_title": "MULTI-FACTOR AUTHENTICATION",
+      "page": 145,
+      "excerpt": "The relevant entities shall ensure that users are authenticated by multiple authentication factors or continuous authentication mechanisms for accessing the entities’ network and information systems, where appropriate, in accordance with the classification of the asset to be accessed.",
+      "source_file": "ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+      "verification_method": "PyMuPDF get_text; whitespace normalized; contiguous exact substring on stated PDF page"
+    },
+    {
+      "passage_id": "V5-ENISA-0051-02",
+      "kg_node_id": "0051",
+      "section_id": "11.7.2",
+      "section_title": "MULTI-FACTOR AUTHENTICATION",
+      "page": 146,
+      "excerpt": "Consider MFA, in particular when accessing systems from a remote location, accessing system administration systems, access to sensitive information, etc.",
+      "source_file": "ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+      "verification_method": "PyMuPDF get_text; whitespace normalized; contiguous exact substring on stated PDF page"
+    },
+    {
+      "passage_id": "V5-ENISA-0054-01",
+      "kg_node_id": "0054",
+      "section_id": "12.2.1",
+      "section_title": "HANDLING OF ASSETS",
+      "page": 150,
+      "excerpt": "establish, implement and apply a policy for the proper handling of assets, including information, in accordance with their network and information security policy and shall communicate the policy on proper handling of assets to anyone who uses or handles assets.",
+      "source_file": "ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+      "verification_method": "PyMuPDF get_text; whitespace normalized; contiguous exact substring on stated PDF page"
+    },
+    {
+      "passage_id": "V5-ENISA-0055-01",
+      "kg_node_id": "0055",
+      "section_id": "12.3.2(a-b)",
+      "section_title": "REMOVABLE MEDIA POLICY",
+      "page": 152,
+      "excerpt": "(a) provide for a technical prohibition of the connection of removable media unless there is an organisational reason for their use; (b) provide for disabling self-execution from such media and scanning the media for malicious code before they are used on the relevant entities’ systems;",
+      "source_file": "ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+      "verification_method": "PyMuPDF get_text; whitespace normalized; contiguous exact substring on stated PDF page"
+    },
+    {
+      "passage_id": "V5-ENISA-0055-02",
+      "kg_node_id": "0055",
+      "section_id": "12.3.2(d)",
+      "section_title": "REMOVABLE MEDIA POLICY",
+      "page": 152,
+      "excerpt": "(d) where appropriate, provide measures for the use of cryptographic techniques to protect data on removable storage media.",
+      "source_file": "ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+      "verification_method": "PyMuPDF get_text; whitespace normalized; contiguous exact substring on stated PDF page"
+    },
+    {
+      "passage_id": "V5-ENISA-0056-01",
+      "kg_node_id": "0056",
+      "section_id": "12.4.1",
+      "section_title": "ASSET INVENTORY",
+      "page": 153,
+      "excerpt": "The relevant entities shall develop and maintain a complete, accurate, up-to-date and consistent inventory of their assets. They shall record changes to the entries in the inventory in a traceable manner.",
+      "source_file": "ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+      "verification_method": "PyMuPDF get_text; whitespace normalized; contiguous exact substring on stated PDF page"
+    }
+  ]
+}

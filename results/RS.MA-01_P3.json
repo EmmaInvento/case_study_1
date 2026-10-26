@@ -1,0 +1,23 @@
+{
+  "requirement_id": "RS.MA-01_P3",
+  "status": "Satisfied",
+  "reason": "RS.MA-01_P3 requires the incident management plan described in RS.MA-01_P1 to be reviewed and, where appropriate, updated periodically—at least every two years—and following significant incidents, with relevant lessons learned incorporated, or when threat exposure and associated risks change. This interpretation is consistent with ENISA guidance on planned and post-incident reviews (V5-ENISA-0010-02) and using reviews to improve incident-handling procedures (V5-ENISA-0015-01). The selected answer to the question about significant incidents and reviews states that at least one significant incident occurred and that the risk assessment and incident management plan were reviewed on schedule and after every event, with relevant lessons incorporated. AR-09 specifically corroborates this self-report: the incident plan underwent its planned annual review on 2026-06-16, satisfying the maximum two-year interval; after the sole significant incident of the last two years, dated 2026-08-18, it was reviewed on 2026-09-04; relevant lessons were incorporated; and no other significant incidents or threat-exposure or organizational changes requiring review occurred. AR-09 also acknowledges continuing contact and communication deficiencies identified in AR-05, but those deficiencies concern the plan's substantive content under RS.MA-01_P1 and do not contradict the review, triggering, or lessons-learned obligations assessed here. The supplied evidence therefore supports every applicable element of RS.MA-01_P3.",
+  "source_ids": {
+    "acn_target": "RS.MA-01_P3",
+    "acn_context": [
+      "RS.MA-01_P1"
+    ],
+    "question_answers": [
+      "recent_security_incident_status"
+    ],
+    "company_records": [
+      "AR-05",
+      "AR-09"
+    ],
+    "enisa_passages": [
+      "V5-ENISA-0010-02",
+      "V5-ENISA-0015-01"
+    ]
+  },
+  "missing_information": []
+}

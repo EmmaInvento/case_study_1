@@ -1,0 +1,22 @@
+{
+  "requirement_id": "GV.SC-04_P1",
+  "status": "Satisfied",
+  "reason": "The answer to “For suppliers that may affect the security of systems and networks … which situation describes the inventory and risk assessment?” selected the less-favourable option stating that the inventory or risk assessment is deficient. This does not conflict with the documented inventory: the answer is disjunctive, and AR-06 and AR-12 establish that the supply risk assessment is incomplete, while AR-06 and AR-11 specifically establish that the supplier inventory is complete and current. The answer to “Which situation describes the supplier-provided IT services used by the company?” also reports an up-to-date inventory identifying every service and supplier. GV.SC-04_P1 requires an up-to-date inventory of all security-impacting suppliers containing a supply contact and supply type; V5-ENISA-0022-01 supports this interpretation. AR-06 states that the inventory covers every such supplier—the cloud provider and two maintenance suppliers—and records a contact person and supply type for each. More specifically, AR-11 confirms that the current inventory contains exactly those three suppliers and, for each, identifies the individual supply contact, current email address, direct telephone number, and type of supply; its currency was verified on 2026-10-09. This satisfies every material element of GV.SC-04_P1. The separate supply-risk-assessment gaps in AR-06 and AR-12 are outside this inventory point and do not change the verdict.",
+  "source_ids": {
+    "acn_target": "GV.SC-04_P1",
+    "acn_context": [],
+    "question_answers": [
+      "cloud_and_external_service_usage_level",
+      "critical_supplier_count_range"
+    ],
+    "company_records": [
+      "AR-06",
+      "AR-11",
+      "AR-12"
+    ],
+    "enisa_passages": [
+      "V5-ENISA-0022-01"
+    ]
+  },
+  "missing_information": []
+}

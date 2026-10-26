@@ -1,0 +1,27 @@
+{
+  "requirement_id": "RS.MA-01_P1",
+  "status": "Partially satisfied",
+  "reason": "Aurora Grid has a documented incident plan covering phases, notification and reporting (AR-05), and the answer concerning significant incidents states that the risk assessment and incident plan were reviewed on schedule and after each event, with lessons incorporated; AR-09 specifically corroborates those reviews and the incorporation of lessons after the 2026-08-18 incident. However, RS.MA-01_P1 requires the plan to include relevant roles and responsibilities, incident-reporting contact information, and internal and external communication arrangements. AR-05 explicitly states that no CSIRT liaison or deputies, staffed reporting channels, contact details, or internal and external communication methods have been established, and that no management-approved cybersecurity organization or current assignment list exists. The answer concerning contact details likewise reports that neither contact details nor responsible people are identified, so it is consistent with AR-05. Supplier and continuity contacts do not remedy these incident-plan deficiencies (AR-11, AR-14). These are material gaps against RS.MA-01_P1 and align with ENISA guidance that incident handling should assign roles and provide escalation, reporting, contact lists, and communication plans (V5-ENISA-0009-01; V5-ENISA-0010-01). Because the evidence establishes an implemented and updated plan containing some required elements but explicitly shows that several mandatory elements are absent, the requirement is partially satisfied.",
+  "source_ids": {
+    "acn_target": "RS.MA-01_P1",
+    "acn_context": [],
+    "question_answers": [
+      "recent_security_incident_status",
+      "security_contact_email"
+    ],
+    "company_records": [
+      "AR-05",
+      "AR-09",
+      "AR-11",
+      "AR-14"
+    ],
+    "enisa_passages": [
+      "V5-ENISA-0009-01",
+      "V5-ENISA-0010-01"
+    ]
+  },
+  "missing_information": [
+    "The text of Article 25 of the NIS decree was not supplied, so conformity of Aurora Grid's notification and reporting procedures with its detailed requirements, including the reports referenced in paragraph 5(c), (d), and (e), cannot be fully verified.",
+    "The supplied evidence does not describe the incident-reporting documentation sufficiently to determine whether the plan includes the reporting required to document incidents under point (e)."
+  ]
+}

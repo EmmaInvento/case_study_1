@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "nis2-academy"
+version = "1.2.0"
+description = "A single-point, traceable ACN teaching assessment"
+requires-python = ">=3.12,<3.13"
+dependencies = ["jsonschema==4.25.1", "httpx==0.28.1", "python-dotenv==1.1.1"]
+
+[project.optional-dependencies]
+verify = ["PyMuPDF==1.26.5"]
+dev = ["pytest==8.4.2", "ruff==0.14.1"]
+
+[project.scripts]
+nis2-assess = "nis2_academy.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/nis2_academy"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

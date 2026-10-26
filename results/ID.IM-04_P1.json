@@ -1,0 +1,23 @@
+{
+  "requirement_id": "ID.IM-04_P1",
+  "status": "Satisfied",
+  "reason": "ID.IM-04_P1 requires a defined, implemented, updated and documented business continuity plan covering the relevant systems and including continuity objectives and needs, scope, roles and responsibilities, principal internal and external contacts and communication channels, activation and deactivation conditions, and necessary resources including backups and redundancies. BC-26 meets every listed element for both relevant systems: it was approved and implemented on 2026-06-16, reviewed after the significant incident on 2026-09-04, remains current, contains all specified content, and was exercised on 2026-09-05 (AR-14). Its resources include existing cloud/offsite data backups, standby operational capacity and redundancy (AR-14), consistent with the pertinent guidance that required resources include backups and redundancies (V5-ENISA-0017-01). The selected answer to whether the company backs up critical data—frequent automatic daily-or-more-often backups with an offsite or cloud copy, tested periodically—is substantiated: both relevant systems' data are backed up daily offsite and restored successfully in monthly tests (AR-02, AR-03). AR-02 also identifies absent configuration backups and offline copies, but ID.IM-04_P1 requires necessary resources including backups and redundancies rather than every possible backup type; AR-14 expressly establishes that BC-26 documents the resources required for continuity, including the backups and redundancy actually provided. The absence of disaster-recovery-plan content (AR-14, AR-15) and the separate incident-reporting and CSIRT contact deficiencies (AR-05) do not negate this point because the target assesses the stated business continuity plan elements, and AR-14 expressly establishes operational continuity contacts and channels.",
+  "source_ids": {
+    "acn_target": "ID.IM-04_P1",
+    "acn_context": [],
+    "question_answers": [
+      "critical_data_backup_status"
+    ],
+    "company_records": [
+      "AR-02",
+      "AR-03",
+      "AR-05",
+      "AR-14",
+      "AR-15"
+    ],
+    "enisa_passages": [
+      "V5-ENISA-0017-01"
+    ]
+  },
+  "missing_information": []
+}

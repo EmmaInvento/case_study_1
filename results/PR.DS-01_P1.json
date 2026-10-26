@@ -1,0 +1,19 @@
+{
+  "requirement_id": "PR.DS-01_P1",
+  "status": "Partially satisfied",
+  "reason": "The selected answer to “Does the company allow the use of removable devices?” says that only company-owned or authorized removable devices are allowed; AR-08 confirms this, so there is no material conflict. PR.DS-01_P1 requires relevant data stored on portable devices and removable media to be encrypted with state-of-the-art, secure protocols and algorithms, unless a regulatory or technical exception is justified and documented. AR-08 confirms compliant encryption for relevant data on laptops, smartphones and authorized USB media, consistent with the cryptographic protection contemplated by V5-ENISA-0055-02. However, AR-08 also identifies a maintenance tablet holding relevant operational data that is unencrypted and has no documented, reasoned legal or technical exception. Thus, encryption is implemented across part of the applicable scope, but a concrete required-scope gap prevents full satisfaction of PR.DS-01_P1.",
+  "source_ids": {
+    "acn_target": "PR.DS-01_P1",
+    "acn_context": [],
+    "question_answers": [
+      "removable_media_policy_status"
+    ],
+    "company_records": [
+      "AR-08"
+    ],
+    "enisa_passages": [
+      "V5-ENISA-0055-02"
+    ]
+  },
+  "missing_information": []
+}

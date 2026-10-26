@@ -1,0 +1,26 @@
+{
+  "requirement_id": "PR.PS-04_P1",
+  "status": "Not determinable",
+  "reason": "PR.PS-04_P1 requires logging of every remote access event and every access event using an account with administrative privileges. A raw VPN session log demonstrates logging for one remote-access path, but it does not establish complete coverage (AR-19). Evidence was unavailable for legacy RDP sessions and the two active cloud administrative accounts, so the record cannot determine whether those required events are logged; that absence of evidence is expressly not proof that they are unlogged (AR-19). Aurora Grid has at least two remote-access paths—the jump host and legacy RDP—and active administrative cloud accounts (AR-07, AR-04), making those evidence gaps material to the required scope. The selected answers concerning undefined controls for at least one remote-access method and the missing or incomplete maintained list of remotely accessible systems provide scope context but do not state whether access logging occurs; AR-07 and AR-18 substantiate those contextual conditions without resolving logging coverage. The absence of active cybersecurity-event monitoring does not resolve the issue because AR-16 expressly distinguishes monitoring from raw audit-log generation and retention. Accordingly, the available evidence proves only a limited instance and neither demonstrates a concrete logging failure nor establishes all required coverage, so the verdict is Not determinable (PR.PS-04_P1; AR-16; AR-19).",
+  "source_ids": {
+    "acn_target": "PR.PS-04_P1",
+    "acn_context": [],
+    "question_answers": [
+      "remote_access_alternative_modes",
+      "remote_access_status"
+    ],
+    "company_records": [
+      "AR-04",
+      "AR-07",
+      "AR-16",
+      "AR-18",
+      "AR-19"
+    ],
+    "enisa_passages": []
+  },
+  "missing_information": [
+    "Current logging configuration and representative raw-log or export evidence for all legacy RDP remote sessions.",
+    "Current logging configuration and representative raw-log or export evidence for access using each of the two active cloud administrative accounts.",
+    "Evidence identifying all other remote-access methods and administrative-privilege accounts in scope, if any, together with proof that their access events are logged."
+  ]
+}

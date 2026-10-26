@@ -1,0 +1,19 @@
+{
+  "requirement_id": "ID.AM-03_P1",
+  "status": "Not satisfied",
+  "reason": "The remote-access question reports that remote access is permitted but the list of accessible systems and access methods is missing, incomplete, or outdated. AR-18 specifically confirms that no maintained register pairs every remotely accessible target with its access method, so the self-report is consistent with, but narrower than, the documented deficiency. More decisively, AR-17 states that Aurora Grid maintains no current inventory of network flows between its network and information systems and the external environment that is approved by internal actors; its one-off description of the jump-host and legacy RDP paths is neither maintained nor internally approved. AR-13 likewise confirms that the current, internally approved asset, service, and application register contains no approved inventory of external network flows. Because an up-to-date, internally approved external-flow inventory is the central requirement of ID.AM-03_P1 and the evidence explicitly establishes its absence, the requirement is not satisfied.",
+  "source_ids": {
+    "acn_target": "ID.AM-03_P1",
+    "acn_context": [],
+    "question_answers": [
+      "remote_access_status"
+    ],
+    "company_records": [
+      "AR-13",
+      "AR-17",
+      "AR-18"
+    ],
+    "enisa_passages": []
+  },
+  "missing_information": []
+}

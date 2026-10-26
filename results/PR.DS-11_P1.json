@@ -1,0 +1,25 @@
+{
+  "requirement_id": "PR.DS-11_P1",
+  "status": "Partially satisfied",
+  "reason": "The answer to “Does the company back up critical data?” reports daily-or-more-frequent automatic backups, an offsite or cloud copy, and periodic testing. AR-02 and AR-03 substantiate daily cloud/offsite data backups for both relevant systems and successful monthly restoration tests. However, PR.DS-11_P1 requires periodic data and configuration backups aligned with the relevant continuity and disaster-recovery needs, plus offline copies for at least the relevant systems. AR-02 explicitly confirms that neither relevant system has configuration backups and that no offline copies exist; the cloud/offsite repository contains the only copies. This is consistent with the questionnaire answer, which claims an offsite or cloud copy rather than an offline copy, but the answer covers less than the full ACN criterion. ENISA passage V5-ENISA-0018-01 supports treating configuration data as part of backup completeness, while AR-14 identifies the existing data backups as continuity resources and AR-15 confirms that no disaster-recovery plan defines the corresponding recovery needs. Thus, implemented and tested data backups satisfy part of PR.DS-11_P1, but the explicit absence of configuration backups and mandatory offline copies leaves concrete gaps, making the requirement partially satisfied.",
+  "source_ids": {
+    "acn_target": "PR.DS-11_P1",
+    "acn_context": [
+      "ID.IM-04_P1",
+      "ID.IM-04_P2"
+    ],
+    "question_answers": [
+      "critical_data_backup_status"
+    ],
+    "company_records": [
+      "AR-02",
+      "AR-03",
+      "AR-14",
+      "AR-15"
+    ],
+    "enisa_passages": [
+      "V5-ENISA-0018-01"
+    ]
+  },
+  "missing_information": []
+}

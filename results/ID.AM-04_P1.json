@@ -1,0 +1,21 @@
+{
+  "requirement_id": "ID.AM-04_P1",
+  "status": "Satisfied",
+  "reason": "ID.AM-04_P1 requires an up-to-date inventory of supplier-provided IT services, including cloud services. AR-06 expressly confirms that Aurora Grid's current inventory includes every such service and identifies each service and supplier. AR-11 further verifies the currency and relevant details of the security-impacting supplier records. This satisfies every material part of the target and aligns with the ENISA guidance on maintaining an up-to-date supplier and ICT-service registry (V5-ENISA-0022-01). The answer to the supplier-service usage question—“They are used and all are listed in an up-to-date inventory identifying the service and supplier”—is therefore corroborated by AR-06. The less-favourable contextual answer concerning critical suppliers does not establish a conflicting inventory deficiency: its alternatives include an incomplete risk assessment, and AR-06 documents such assessment gaps while confirming that the inventory itself is complete and current. Those risk-assessment gaps are outside this inventory-only requirement.",
+  "source_ids": {
+    "acn_target": "ID.AM-04_P1",
+    "acn_context": [],
+    "question_answers": [
+      "cloud_and_external_service_usage_level",
+      "critical_supplier_count_range"
+    ],
+    "company_records": [
+      "AR-06",
+      "AR-11"
+    ],
+    "enisa_passages": [
+      "V5-ENISA-0022-01"
+    ]
+  },
+  "missing_information": []
+}

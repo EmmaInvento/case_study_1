@@ -1,0 +1,26 @@
+{
+  "requirement_id": "GV.SC-07_P1",
+  "status": "Partially satisfied",
+  "reason": "The supplier-services question selected the answer that all services and suppliers are recorded in an up-to-date inventory; AR-06 confirms this. The security-impacting-suppliers question selected the answer that the inventory or supply-risk assessment is incomplete. AR-06 and AR-11 resolve that alternative more precisely: all three relevant suppliers are inventoried, but their documented assessment is incomplete. Specifically, Aurora Grid assesses supplier access levels and access to intellectual property and data, satisfying items (a) and (b), but omits severe-disruption impact, recovery times and costs, and supplier governance roles and responsibilities required by items (c)–(e) of GV.SC-07_P1 (AR-06). AR-12 confirms these omissions and additionally identifies an unassessed prolonged maintenance-service outage dependency. Although an operating risk-management process exists, it does not cure gaps in the executed assessment (AR-10, AR-12). This supports partial rather than full satisfaction of the documented supply-risk assessment required by GV.SC-07_P1, read with ID.RA-05_P1; ENISA passage V5-ENISA-0005-01 likewise clarifies that risk assessments are to be performed and documented, without proving Aurora Grid's implementation.",
+  "source_ids": {
+    "acn_target": "GV.SC-07_P1",
+    "acn_context": [
+      "ID.RA-05_P1",
+      "GV.RM-03_P1"
+    ],
+    "question_answers": [
+      "cloud_and_external_service_usage_level",
+      "critical_supplier_count_range"
+    ],
+    "company_records": [
+      "AR-06",
+      "AR-10",
+      "AR-11",
+      "AR-12"
+    ],
+    "enisa_passages": [
+      "V5-ENISA-0005-01"
+    ]
+  },
+  "missing_information": []
+}

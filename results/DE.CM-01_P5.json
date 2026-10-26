@@ -1,0 +1,23 @@
+{
+  "requirement_id": "DE.CM-01_P5",
+  "status": "Not satisfied",
+  "reason": "DE.CM-01_P5 requires cybersecurity-event monitoring, across at least the relevant systems, of remote access, perimeter router and firewall activity, significant administrative events, and successful and failed access to network resources, endpoints and applications. The review expressly finds that neither relevant system has an operated or configured service monitoring any of these event categories for detection, and that no other process performs such monitoring (AR-16). This explicit, scope-complete finding establishes failure of the central requirement. The raw VPN log sample does not demonstrate active monitoring or complete event coverage; evidence for legacy RDP sessions and active cloud administrative accounts was unavailable (AR-19). The selected answers concerning undefined controls for at least one remote-access method and the missing or incomplete remote-access list provide context about remote access but do not claim that the required monitoring exists; the dossier confirms an undocumented and unrestricted legacy RDP route (AR-07) and no maintained system-to-access-method list (AR-18), so there is no material conflict. DE.CM-01_P1 clarifies that the monitoring serves prompt detection of significant incidents, but it is interpretive context rather than separate company evidence.",
+  "source_ids": {
+    "acn_target": "DE.CM-01_P5",
+    "acn_context": [
+      "DE.CM-01_P1"
+    ],
+    "question_answers": [
+      "remote_access_alternative_modes",
+      "remote_access_status"
+    ],
+    "company_records": [
+      "AR-07",
+      "AR-16",
+      "AR-18",
+      "AR-19"
+    ],
+    "enisa_passages": []
+  },
+  "missing_information": []
+}

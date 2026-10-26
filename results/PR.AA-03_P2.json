@@ -1,0 +1,23 @@
+{
+  "requirement_id": "PR.AA-03_P2",
+  "status": "Partially satisfied",
+  "reason": "The question “Has the company implemented multi-factor authentication systems?” was answered “MFA implemented only on some systems.” This is consistent with, rather than contradicted by, the documented situation: MFA is active for ordinary operations-management application accounts, the jump-host path, VPN and email, but is absent from the legacy RDP maintenance account and two active cloud-console administrative accounts (AR-07, AR-04). The approved risk assessment defines the relevant scope as the operations management system and administrative cloud environment and requires MFA for every enabled account on both (AR-01); the authentication-method assessment likewise requires MFA for all accounts on those systems, with no documented derogations for the uncovered accounts (AR-07, AR-04). PR.AA-03_P2 requires MFA for at least the relevant systems in accordance with the risk assessment. ENISA particularly identifies remote and system-administration access as appropriate MFA use cases (V5-ENISA-0051-02). Thus, implemented MFA covers part of the applicable scope, but the specifically identified remote-maintenance and administrative-account gaps violate the risk-based coverage required by PR.AA-03_P2; partial satisfaction is appropriate because MFA is demonstrably implemented elsewhere within that scope (AR-07).",
+  "source_ids": {
+    "acn_target": "PR.AA-03_P2",
+    "acn_context": [
+      "ID.RA-05_P1"
+    ],
+    "question_answers": [
+      "mfa_implementation_status"
+    ],
+    "company_records": [
+      "AR-01",
+      "AR-04",
+      "AR-07"
+    ],
+    "enisa_passages": [
+      "V5-ENISA-0051-02"
+    ]
+  },
+  "missing_information": []
+}

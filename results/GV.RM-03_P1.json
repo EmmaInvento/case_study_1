@@ -1,0 +1,25 @@
+{
+  "requirement_id": "GV.RM-03_P1",
+  "status": "Partially satisfied",
+  "reason": "GV.RM-03_P1 requires a documented, implemented and updated plan covering risk identification, analysis, evaluation, treatment and monitoring; V5-ENISA-0005-01 likewise explains that documented assessments should lead to an implemented and monitored treatment plan. Aurora Grid has an approved and communicated GV.PO-01 risk-management policy and an operating, documented plan that defines all five stages, assigns ownership, requires monthly checks and escalation, was updated after the significant incident, and has a treatment tracker with implementation and monitoring entries (AR-10). However, execution is incomplete: a prolonged outage of a maintenance supplier service on which system recovery depends was not identified as a scenario and consequently received no likelihood, impact or risk evaluation (AR-12). The selected supplier inventory and risk-assessment answer—suppliers are present but the inventory or assessment is incomplete—is consistent with the dossier: the inventory is complete and current (AR-11), while the assessment is incomplete (AR-12). Thus, the plan is defined, documented, implemented and updated, with treatment and monitoring operating, but the concrete identification, analysis and evaluation gap prevents satisfaction across the applicable risk scope (AR-10; AR-12), so GV.RM-03_P1 is partially satisfied.",
+  "source_ids": {
+    "acn_target": "GV.RM-03_P1",
+    "acn_context": [
+      "GV.PO-01",
+      "GV.PO-01_P1",
+      "GV.PO-01_P3"
+    ],
+    "question_answers": [
+      "critical_supplier_count_range"
+    ],
+    "company_records": [
+      "AR-10",
+      "AR-11",
+      "AR-12"
+    ],
+    "enisa_passages": [
+      "V5-ENISA-0005-01"
+    ]
+  },
+  "missing_information": []
+}

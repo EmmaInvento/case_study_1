@@ -1,0 +1,19 @@
+{
+  "requirement_id": "PR.DS-01_P2",
+  "status": "Not satisfied",
+  "reason": "The question “Does the company allow the use of removable devices?” is answered “The company allows only company-owned or authorized removable devices.” AR-08 confirms that restriction, so there is no material conflict; however, this self-report addresses which media are allowed, not the required safeguards. PR.DS-01_P2 requires autorun to be disabled and removable media to be scanned for malicious code before use unless justified and documented regulatory or technical reasons apply; V5-ENISA-0055-01 likewise describes disabling self-execution and conducting a pre-use malicious-code scan. AR-08 explicitly states that autorun is not disabled, no pre-use antimalware scan is performed, and no reasoned, documented legal or technical exceptions exist. Thus, both central safeguards required by PR.DS-01_P2 are absent in the applicable scope, making the requirement not satisfied (AR-08; PR.DS-01_P2).",
+  "source_ids": {
+    "acn_target": "PR.DS-01_P2",
+    "acn_context": [],
+    "question_answers": [
+      "removable_media_policy_status"
+    ],
+    "company_records": [
+      "AR-08"
+    ],
+    "enisa_passages": [
+      "V5-ENISA-0055-01"
+    ]
+  },
+  "missing_information": []
+}

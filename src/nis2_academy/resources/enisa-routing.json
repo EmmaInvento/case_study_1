@@ -1,0 +1,88 @@
+{
+  "method": "Historical editorial filter after ACN <- question -> ENISA traversal; no legal equivalence or proof of relevance.",
+  "by_requirement": {
+    "DE.CM-01_P5": [],
+    "GV.OC-04_P1": [
+      "V5-ENISA-0056-01"
+    ],
+    "GV.RM-03_P1": [
+      "V5-ENISA-0005-01"
+    ],
+    "GV.RR-02_P1": [
+      "V5-ENISA-0004-01"
+    ],
+    "GV.RR-02_P2": [
+      "V5-ENISA-0004-01"
+    ],
+    "GV.RR-02_P3": [
+      "V5-ENISA-0004-01",
+      "V5-ENISA-0010-01"
+    ],
+    "GV.SC-04_P1": [
+      "V5-ENISA-0022-01"
+    ],
+    "GV.SC-07_P1": [
+      "V5-ENISA-0005-01",
+      "V5-ENISA-0021-01"
+    ],
+    "ID.AM-02_P1": [
+      "V5-ENISA-0056-01"
+    ],
+    "ID.AM-03_P1": [],
+    "ID.AM-04_P1": [
+      "V5-ENISA-0022-01"
+    ],
+    "ID.IM-04_P1": [
+      "V5-ENISA-0017-01"
+    ],
+    "ID.IM-04_P2": [
+      "V5-ENISA-0017-01"
+    ],
+    "ID.RA-05_P1": [
+      "V5-ENISA-0005-01",
+      "V5-ENISA-0021-01"
+    ],
+    "ID.RA-05_P2": [
+      "V5-ENISA-0015-01"
+    ],
+    "PR.AA-03_P1": [
+      "V5-ENISA-0050-01"
+    ],
+    "PR.AA-03_P2": [
+      "V5-ENISA-0051-01",
+      "V5-ENISA-0051-02"
+    ],
+    "PR.AA-05_P1": [
+      "V5-ENISA-0046-01"
+    ],
+    "PR.DS-01_P1": [
+      "V5-ENISA-0055-02"
+    ],
+    "PR.DS-01_P2": [
+      "V5-ENISA-0055-01"
+    ],
+    "PR.DS-11_P1": [
+      "V5-ENISA-0017-01",
+      "V5-ENISA-0018-01",
+      "V5-ENISA-0018-02"
+    ],
+    "PR.DS-11_P4": [
+      "V5-ENISA-0018-03"
+    ],
+    "PR.IR-01_P1": [
+      "V5-ENISA-0030-01",
+      "V5-ENISA-0045-01",
+      "V5-ENISA-0051-02"
+    ],
+    "PR.IR-01_P2": [],
+    "PR.PS-04_P1": [],
+    "RS.MA-01_P1": [
+      "V5-ENISA-0009-01",
+      "V5-ENISA-0010-01"
+    ],
+    "RS.MA-01_P3": [
+      "V5-ENISA-0010-02",
+      "V5-ENISA-0015-01"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "requirement_id": "PR.IR-01_P2",
+  "status": "Not satisfied",
+  "reason": "The question about the list of remotely accessible systems and their respective access methods selected answer B: remote access is permitted, but the list is missing, incomplete or not up to date. This is confirmed and resolved more specifically by the dated records: the maintained system register identifies the relevant systems but does not pair remotely accessible targets with their access methods (AR-13), and no other maintained register contains that paired information; the known jump-host and legacy RDP routes appear only in a one-off review note (AR-18). Although those routes and their target are identified (AR-07), this does not constitute an up-to-date maintained list. Because maintaining that list, including corresponding access methods, is the central obligation of PR.IR-01_P2 and the evidence explicitly establishes its absence (AR-18), the requirement is not satisfied.",
+  "source_ids": {
+    "acn_target": "PR.IR-01_P2",
+    "acn_context": [],
+    "question_answers": [
+      "remote_access_status"
+    ],
+    "company_records": [
+      "AR-07",
+      "AR-13",
+      "AR-18"
+    ],
+    "enisa_passages": []
+  },
+  "missing_information": []
+}

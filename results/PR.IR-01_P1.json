@@ -1,0 +1,24 @@
+{
+  "requirement_id": "PR.IR-01_P1",
+  "status": "Partially satisfied",
+  "reason": "The remote-access-methods question selected answer C: at least one method is used, but permitted activities or security measures are not defined, documented or applied for every accessible system. This is consistent with the dossier, not in conflict with it: for the jump host, permitted activities are documented and MFA and access restrictions are applied, whereas for the legacy Internet-reachable RDP service, permitted activities are undocumented and both MFA and connection-origin restrictions are absent (AR-07). The remote-access-status question selected answer B: remote access is permitted, but the system-and-method list is missing, incomplete or outdated. AR-18 specifically confirms that no maintained register pairs every remotely accessible target with its access method, so this answer is also consistent with the dossier. PR.IR-01_P1 requires remotely permitted activities to be defined and documented and appropriate access-security measures to be implemented across at least the relevant systems. ENISA guidance supports determining and applying remote-access controls, including for service providers (V5-ENISA-0030-01), documenting and implementing access-control policies (V5-ENISA-0045-01), and considering MFA particularly for remote access (V5-ENISA-0051-02). The compliant jump-host path satisfies part of the requirement, but the documented legacy RDP gaps affect a relevant system and leave both required activities and access safeguards unmet for that path (AR-01, AR-07). Accordingly, the requirement is only partially satisfied (PR.IR-01_P1).",
+  "source_ids": {
+    "acn_target": "PR.IR-01_P1",
+    "acn_context": [],
+    "question_answers": [
+      "remote_access_alternative_modes",
+      "remote_access_status"
+    ],
+    "company_records": [
+      "AR-01",
+      "AR-07",
+      "AR-18"
+    ],
+    "enisa_passages": [
+      "V5-ENISA-0030-01",
+      "V5-ENISA-0045-01",
+      "V5-ENISA-0051-02"
+    ]
+  },
+  "missing_information": []
+}
